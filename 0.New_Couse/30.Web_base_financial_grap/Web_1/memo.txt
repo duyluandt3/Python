@@ -1,0 +1,484 @@
+Microsoft Windows [Version 10.0.18362.720]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web\Demo>pip freeze
+appdirs==1.4.3
+attrs==19.1.0
+backcall==0.1.0
+bleach==3.1.0
+branca==0.4.0
+certifi==2020.4.5.1
+chardet==3.0.4
+click==7.1.1
+colorama==0.4.1
+decorator==4.4.0
+defusedxml==0.6.0
+distlib==0.3.0
+dnspython==1.16.0
+entrypoints==0.3
+filelock==3.0.12
+Flask==1.1.2
+folium==0.10.1
+geographiclib==1.50
+geopy==1.21.0
+idna==2.9
+importlib-metadata==1.6.0
+ipykernel==5.1.2
+ipython==7.8.0
+ipython-genutils==0.2.0
+ipywidgets==7.5.1
+itsdangerous==1.1.0
+jedi==0.15.1
+Jinja2==2.10.1
+jsonschema==3.0.2
+jupyter==1.0.0
+jupyter-client==5.3.1
+jupyter-console==6.0.0
+jupyter-core==4.5.0
+MarkupSafe==1.1.1
+mistune==0.8.4
+mysql-connector==2.2.9
+mysql-connector-python==8.0.19
+nbconvert==5.6.0
+nbformat==4.4.0
+notebook==6.0.1
+numpy==1.18.1
+opencv-python==4.2.0.34
+pandas==1.0.3
+pandocfilters==1.4.2
+parso==0.5.1
+pickleshare==0.7.5
+prometheus-client==0.7.1
+prompt-toolkit==2.0.9
+protobuf==3.6.1
+Pygments==2.4.2
+pyrsistent==0.15.4
+python-dateutil==2.8.0
+pytz==2019.3
+pywinpty==0.5.5
+pyzmq==18.1.0
+qtconsole==4.5.5
+requests==2.23.0
+Send2Trash==1.5.0
+six==1.12.0
+terminado==0.8.2
+testpath==0.4.2
+tornado==6.0.3
+traitlets==4.3.2
+urllib3==1.25.8
+virtualenv==20.0.17
+wcwidth==0.1.7
+webencodings==0.5.1
+Werkzeug==1.0.1
+widgetsnbextension==3.5.1
+xlrd==1.2.0
+zipp==3.1.0
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web\Demo>..\virtual\Scripts\pip install gunicorn
+Collecting gunicorn
+  Downloading https://files.pythonhosted.org/packages/69/ca/926f7cd3a2014b16870086b2d0fdc84a9e49473c68a8dff8b57f7c156f43/gunicorn-20.0.4-py2.py3-none-any.whl (77kB)
+    100% |████████████████████████████████| 81kB 1.3MB/s
+Requirement already satisfied: setuptools>=3.0 in d:\data\electronic\electronic study\python\0.new_couse\20.web\web\virtual\lib\site-packages (from gunicorn) (40.8.0)
+Installing collected packages: gunicorn
+Successfully installed gunicorn-20.0.4
+You are using pip version 19.0.3, however version 20.0.2 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web\Demo>..\virtual\Scripts\pip freeze > requirements.txt
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web\Demo>cd ..
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web>cd ,,
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web>cd ..
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web>cd Web_1
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1>
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1>
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1>ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1>
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1>
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1>
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1>python -m venv virtual
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1>virtual\Scipts\pip install flask
+The system cannot find the path specified.
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1>virtual\Scripts\pip install flask
+Collecting flask
+  Using cached https://files.pythonhosted.org/packages/f2/28/2a03252dfb9ebf377f40fba6a7841b47083260bf8bd8e737b0c6952df83f/Flask-1.1.2-py2.py3-none-any.whl
+Collecting Werkzeug>=0.15 (from flask)
+  Using cached https://files.pythonhosted.org/packages/cc/94/5f7079a0e00bd6863ef8f1da638721e9da21e5bacee597595b318f71d62e/Werkzeug-1.0.1-py2.py3-none-any.whl
+Collecting click>=5.1 (from flask)
+  Using cached https://files.pythonhosted.org/packages/dd/c0/4d8f43a9b16e289f36478422031b8a63b54b6ac3b1ba605d602f10dd54d6/click-7.1.1-py2.py3-none-any.whl
+Collecting Jinja2>=2.10.1 (from flask)
+  Using cached https://files.pythonhosted.org/packages/30/9e/f663a2aa66a09d838042ae1a2c5659828bb9b41ea3a6efa20a20fd92b121/Jinja2-2.11.2-py2.py3-none-any.whl
+Collecting itsdangerous>=0.24 (from flask)
+  Using cached https://files.pythonhosted.org/packages/76/ae/44b03b253d6fade317f32c24d100b3b35c2239807046a4c953c7b89fa49e/itsdangerous-1.1.0-py2.py3-none-any.whl
+Collecting MarkupSafe>=0.23 (from Jinja2>=2.10.1->flask)
+  Using cached https://files.pythonhosted.org/packages/5b/d4/1deb3c5dc3714fb160c7e2116fc6dff36a063d9156a9328cce54ef35cc52/MarkupSafe-1.1.1-cp37-cp37m-win32.whl
+Installing collected packages: Werkzeug, click, MarkupSafe, Jinja2, itsdangerous, flask
+Successfully installed Jinja2-2.11.2 MarkupSafe-1.1.1 Werkzeug-1.0.1 click-7.1.1 flask-1.1.2 itsdangerous-1.1.0
+You are using pip version 19.0.3, however version 20.0.2 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1>virtual\Scripts\python Demo\Scipt1.py
+ * Serving Flask app "Scipt1" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 204-857-334
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+
+Logging in... done
+Logged in as duyluandt3@gmail.com
+Opening browser to https://cli-auth.heroku.com/auth/cli/browser/f7db04eb-7c5e-4af9-bcbD:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1>heroku create duyluandt31 Waiting for login...
+Creating ⬢ duyluandt31... done
+https://duyluandt31.herokuapp.com/ | https://git.heroku.com/duyluandt31.git
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1>heroku app
+ »   Warning: app is not a heroku command.
+Did you mean apps? [y/n]: y
+=== duyluandt3@gmail.com Apps
+duyluandt3
+duyluandt31
+webapp-setup (eu)
+
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1> pip freeze
+appdirs==1.4.3
+attrs==19.1.0
+backcall==0.1.0
+bleach==3.1.0
+branca==0.4.0
+certifi==2020.4.5.1
+chardet==3.0.4
+click==7.1.1
+colorama==0.4.1
+decorator==4.4.0
+defusedxml==0.6.0
+distlib==0.3.0
+dnspython==1.16.0
+entrypoints==0.3
+filelock==3.0.12
+Flask==1.1.2
+folium==0.10.1
+geographiclib==1.50
+geopy==1.21.0
+idna==2.9
+importlib-metadata==1.6.0
+ipykernel==5.1.2
+ipython==7.8.0
+ipython-genutils==0.2.0
+ipywidgets==7.5.1
+itsdangerous==1.1.0
+jedi==0.15.1
+Jinja2==2.10.1
+jsonschema==3.0.2
+jupyter==1.0.0
+jupyter-client==5.3.1
+jupyter-console==6.0.0
+jupyter-core==4.5.0
+MarkupSafe==1.1.1
+mistune==0.8.4
+mysql-connector==2.2.9
+mysql-connector-python==8.0.19
+nbconvert==5.6.0
+nbformat==4.4.0
+notebook==6.0.1
+numpy==1.18.1
+opencv-python==4.2.0.34
+pandas==1.0.3
+pandocfilters==1.4.2
+parso==0.5.1
+pickleshare==0.7.5
+prometheus-client==0.7.1
+prompt-toolkit==2.0.9
+protobuf==3.6.1
+Pygments==2.4.2
+pyrsistent==0.15.4
+python-dateutil==2.8.0
+pytz==2019.3
+pywinpty==0.5.5
+pyzmq==18.1.0
+qtconsole==4.5.5
+requests==2.23.0
+Send2Trash==1.5.0
+six==1.12.0
+terminado==0.8.2
+testpath==0.4.2
+tornado==6.0.3
+traitlets==4.3.2
+urllib3==1.25.8
+virtualenv==20.0.17
+wcwidth==0.1.7
+webencodings==0.5.1
+Werkzeug==1.0.1
+widgetsnbextension==3.5.1
+xlrd==1.2.0
+zipp==3.1.0
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1>cd Demo
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1\Demo>
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1\Demo>
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1\Demo>..\virtual\Scripts\pip install gunicorn
+Collecting gunicorn
+  Using cached https://files.pythonhosted.org/packages/69/ca/926f7cd3a2014b16870086b2d0fdc84a9e49473c68a8dff8b57f7c156f43/gunicorn-20.0.4-py2.py3-none-any.whl
+Requirement already satisfied: setuptools>=3.0 in d:\data\electronic\electronic study\python\0.new_couse\20.web\web_1\virtual\lib\site-packages (from gunicorn) (40.8.0)
+Installing collected packages: gunicorn
+Successfully installed gunicorn-20.0.4
+You are using pip version 19.0.3, however version 20.0.2 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1\Demo>..\virtual\Scripts\pip freeze > requirements.txt
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1\Demo>git init
+Initialized empty Git repository in D:/DATA/Electronic/Electronic Study/Python/0.New_Couse/20.Web/Web_1/Demo/.git/
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1\Demo>git add .
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1\Demo>git commit -m "first commit"
+[master (root-commit) d0629dc] first commit
+ 8 files changed, 154 insertions(+)
+ create mode 100644 Procfile
+ create mode 100644 Scipt1.py
+ create mode 100644 requirenents.txt
+ create mode 100644 static/css/main.css
+ create mode 100644 templates/about.html
+ create mode 100644 templates/home.html
+ create mode 100644 templates/layout.html
+ create mode 100644 templates/runtime.txt
+
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1\Demo>heroku git:remote --app duyluandt3
+set git remote heroku to https://git.heroku.com/duyluandt3.git
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1\Demo>git push heroku master
+To https://git.heroku.com/duyluandt3.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://git.heroku.com/duyluandt3.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1\Demo>heroku git:remote --app duyluandt31
+set git remote heroku to https://git.heroku.com/duyluandt31.git
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1\Demo>git push heroku master
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (13/13), 1.92 KiB | 983.00 KiB/s, done.
+Total 13 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote:  !     No default language could be detected for this app.
+remote:                         HINT: This occurs when Heroku cannot detect the buildpack to use for this application automatically.
+remote:                         See https://devcenter.heroku.com/articles/buildpacks
+remote:
+remote:  !     Push failed
+remote: Verifying deploy...
+remote:
+remote: !       Push rejected to duyluandt31.
+remote:
+To https://git.heroku.com/duyluandt31.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://git.heroku.com/duyluandt31.git'
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1\Demo>python -V
+Python 3.7.4
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1\Demo>git push heroku master
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (13/13), 1.92 KiB | 983.00 KiB/s, done.
+Total 13 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote:  !     No default language could be detected for this app.
+remote:                         HINT: This occurs when Heroku cannot detect the buildpack to use for this application automatically.
+remote:                         See https://devcenter.heroku.com/articles/buildpacks
+remote:
+remote:  !     Push failed
+remote: Verifying deploy...
+remote:
+remote: !       Push rejected to duyluandt31.
+remote:
+To https://git.heroku.com/duyluandt31.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://git.heroku.com/duyluandt31.git'
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1\Demo> pip freeze > requirements.txt
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1\Demo>git push heroku master
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (13/13), 1.92 KiB | 983.00 KiB/s, done.
+Total 13 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote:  !     No default language could be detected for this app.
+remote:                         HINT: This occurs when Heroku cannot detect the buildpack to use for this application automatically.
+remote:                         See https://devcenter.heroku.com/articles/buildpacks
+remote:
+remote:  !     Push failed
+remote: Verifying deploy...
+remote:
+remote: !       Push rejected to duyluandt31.
+remote:
+To https://git.heroku.com/duyluandt31.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://git.heroku.com/duyluandt31.git'
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1\Demo>heroku buildpacks:set heroku/python
+Buildpack set. Next release on duyluandt31 will use heroku/python.
+Run git push heroku master to create a new release using this buildpack.
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1\Demo>git push heroku master
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (13/13), 1.92 KiB | 983.00 KiB/s, done.
+Total 13 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote: -----> App not compatible with buildpack: https://buildpack-registry.s3.amazonaws.com/buildpacks/heroku/python.tgz
+remote:        More info: https://devcenter.heroku.com/articles/buildpacks#detection-failure
+remote:
+remote:  !     Push failed
+remote: Verifying deploy...
+remote:
+remote: !       Push rejected to duyluandt31.
+remote:
+To https://git.heroku.com/duyluandt31.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://git.heroku.com/duyluandt31.git'
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1\Demo>git commit -m "second commit"
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    requirenents.txt
+        deleted:    templates/runtime.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        requirements.txt
+        runtime.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1\Demo>git add runtime.txt
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1\Demo>git commit -m "runtime.txt"
+[master f5e79f0] runtime.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 runtime.txt
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1\Demo>git commit -m "second commit"
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    requirenents.txt
+        deleted:    templates/runtime.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        requirements.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1\Demo>git add .
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1\Demo>git commit -m "second commit"
+[master 46e3301] second commit
+ 2 files changed, 1 deletion(-)
+ rename requirenents.txt => requirements.txt (100%)
+ delete mode 100644 templates/runtime.txt
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1\Demo>git push heroku master
+Enumerating objects: 18, done.
+Counting objects: 100% (18/18), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (18/18), 2.32 KiB | 1.16 MiB/s, done.
+Total 18 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote: -----> Python app detected
+remote:  !     Python has released a security update! Please consider upgrading to python-3.7.6
+remote:        Learn More: https://devcenter.heroku.com/articles/python-runtimes
+remote: cp: cannot create regular file '/app/tmp/cache/.heroku/requirements.txt': No such file or directory
+remote: -----> Installing python-3.7.2
+remote: -----> Installing pip
+remote: -----> Installing SQLite3
+remote: Sqlite3 successfully installed.
+remote: -----> Installing requirements with pip
+remote:        Collecting click==7.1.1
+remote:          Downloading click-7.1.1-py2.py3-none-any.whl (82 kB)
+remote:        Collecting Flask==1.1.2
+remote:          Downloading Flask-1.1.2-py2.py3-none-any.whl (94 kB)
+remote:        Collecting gunicorn==20.0.4
+remote:          Downloading gunicorn-20.0.4-py2.py3-none-any.whl (77 kB)
+remote:        Collecting itsdangerous==1.1.0
+remote:          Downloading itsdangerous-1.1.0-py2.py3-none-any.whl (16 kB)
+remote:        Collecting Jinja2==2.11.2
+remote:          Downloading Jinja2-2.11.2-py2.py3-none-any.whl (125 kB)
+remote:        Collecting MarkupSafe==1.1.1
+remote:          Downloading MarkupSafe-1.1.1-cp37-cp37m-manylinux1_x86_64.whl (27 kB)
+remote:        Collecting Werkzeug==1.0.1
+remote:          Downloading Werkzeug-1.0.1-py2.py3-none-any.whl (298 kB)
+remote:        Installing collected packages: click, Werkzeug, MarkupSafe, Jinja2, itsdangerous, Flask, gunicorn
+remote:        Successfully installed Flask-1.1.2 Jinja2-2.11.2 MarkupSafe-1.1.1 Werkzeug-1.0.1 click-7.1.1 gunicorn-20.0.4 itsdangerous-1.1.0
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote:
+remote: -----> Compressing...
+remote:        Done: 48M
+remote: -----> Launching...
+remote:        Released v3
+remote:        https://duyluandt31.herokuapp.com/ deployed to Heroku
+remote:
+remote: Verifying deploy... done.
+To https://git.heroku.com/duyluandt31.git
+ * [new branch]      master -> master
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1\Demo>heroku open
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1\Demo>heroku info
+=== duyluandt31
+Auto Cert Mgmt: false
+Dynos:          web: 1
+Git URL:        https://git.heroku.com/duyluandt31.git
+Owner:          duyluandt3@gmail.com
+Region:         us
+Repo Size:      5 KB
+Slug Size:      48 MB
+Stack:          heroku-18
+Web URL:        https://duyluandt31.herokuapp.com/
+
+D:\DATA\Electronic\Electronic Study\Python\0.New_Couse\20.Web\Web_1\Demo>
