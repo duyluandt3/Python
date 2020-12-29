@@ -1,0 +1,8 @@
+{
+    "DeviceType":"AP",
+    "ModelName":"BCM94706NRH4360AC",
+    "ExHost":"localhost",
+    "ExPort":5101,
+    "ExBacklog":1,
+    "ExBufsize":4096
+}

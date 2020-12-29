@@ -1,0 +1,363 @@
+============================= test session starts =============================
+platform win32 -- Python 3.6.4, pytest-4.0.0, py-1.7.0, pluggy-0.8.0 -- c:\users\m11083h\appdata\local\programs\python\python36-32\python.exe
+cachedir: .pytest_cache
+rootdir: D:\02_案件\自動評価\コーディング\Others\src, inifile:
+plugins: cov-2.6.0
+collecting ... collected 24 items
+
+device/AP/Cisco/test_Control.py::test_dhcpd_1 
+Test Objective: Normal
+[In] l_com_hdr_info : test
+[In] d_tlv_param : {'WlanId': 9, 'IpAddress': '192.168.0.10', 'NetMask': '255.255.255.0', 'GateWay': '192.168.0.25', 'AssignNum': 50, 'LeaseTime': 86400}
+[Logger] debug: [call('[AP FUNC] startdhcpd command start')]
+[Logger] error: []
+[Logger] info: []
+[Call list] static_snd_rcv_cmd: [call('test', 0, 1, 'config dhcp disable cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp delete-scope cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp create-scope cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp disable cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp address-pool cisco_controller_dhcp 192.168.0.10 192.168.0.60'),
+ call('test', 0, 1, 'config dhcp network cisco_controller_dhcp 192.168.0.0 255.255.255.0'),
+ call('test', 0, 1, 'config dhcp default-router cisco_controller_dhcp 192.168.0.25'),
+ call('test', 0, 1, 'config dhcp lease cisco_controller_dhcp 86400'),
+ call('test', 0, 1, 'config dhcp enable cisco_controller_dhcp'),
+ call('test', 0, 1, 'config wlan disable 9'),
+ call('test', 0, 1, 'config wlan dhcp_server 9 192.168.0.25'),
+ call('test', 0, 1, 'config wlan enable 9')]
+[Out] i_ret: {'Result': 0}
+PASSED
+device/AP/Cisco/test_Control.py::test_dhcpd_2 
+Test Objective: not WlanId
+[In] l_com_hdr_info : test
+[In] d_tlv_param : {'IpAddress': '192.168.0.10', 'NetMask': '255.255.255.0', 'GateWay': '192.168.0.25', 'AssignNum': 50, 'LeaseTime': 86400}
+[Logger] debug: [call('[AP FUNC] startdhcpd command start')]
+[Logger] error: [call('[AP CTRL] cisco ap must be WlanId parameter !!')]
+[Logger] info: []
+[Call list] static_snd_rcv_cmd: []
+[Out] i_ret: {'Result': -3}
+PASSED
+device/AP/Cisco/test_Control.py::test_dhcpd_3 
+Test Objective: except OSError
+[In] l_com_hdr_info : test
+[In] d_tlv_param : {'WlanId': 9, 'IpAddress': '192.168.0.10', 'NetMask': '255.255.255.0.10', 'GateWay': '192.168.0.25', 'AssignNum': 50, 'LeaseTime': 86400}
+[Logger] debug: [call('[AP FUNC] startdhcpd command start')]
+[Logger] error: [call('NetMask format error ([WinError 10022] 無効な引数が提供されました。)')]
+[Logger] info: []
+[Call list] static_snd_rcv_cmd: [call('test', 0, 1, 'config dhcp disable cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp delete-scope cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp create-scope cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp disable cisco_controller_dhcp')]
+[Out] i_ret: {'Result': -8}
+PASSED
+device/AP/Cisco/test_Control.py::test_dhcpd_4 
+Test Objective: except IpAddressValueerror
+[In] l_com_hdr_info : test
+[In] d_tlv_param : {'WlanId': 9, 'IpAddress': '192.168.0.10.60', 'NetMask': '255.255.255.0', 'GateWay': '192.168.0.25', 'AssignNum': 50, 'LeaseTime': 86400}
+[Logger] debug: [call('[AP FUNC] startdhcpd command start')]
+[Logger] error: [call("Start IpAddress format error (Expected 4 octets in '192.168.0.10.60')")]
+[Logger] info: []
+[Call list] static_snd_rcv_cmd: [call('test', 0, 1, 'config dhcp disable cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp delete-scope cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp create-scope cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp disable cisco_controller_dhcp')]
+[Out] i_ret: {'Result': -8}
+PASSED
+device/AP/Cisco/test_Control.py::test_dhcpd_5 
+Test Objective: i_available_num < i_assign_num
+[In] l_com_hdr_info : test
+[In] d_tlv_param : {'WlanId': 9, 'IpAddress': '192.168.0.206', 'NetMask': '255.255.255.0', 'GateWay': '192.168.0.25', 'AssignNum': 50, 'LeaseTime': 86400}
+[Logger] debug: [call('[AP FUNC] startdhcpd command start')]
+[Logger] error: [call('Exceeded IPAddress setting range')]
+[Logger] info: []
+[Call list] static_snd_rcv_cmd: [call('test', 0, 1, 'config dhcp disable cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp delete-scope cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp create-scope cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp disable cisco_controller_dhcp')]
+[Out] i_ret: {'Result': -8}
+PASSED
+device/AP/Cisco/test_Control.py::test_dhcpd_6 
+Test Objective: i_available_num = i_assign_num
+[In] l_com_hdr_info : test
+[In] d_tlv_param : {'WlanId': 9, 'IpAddress': '192.168.0.205', 'NetMask': '255.255.255.0', 'GateWay': '192.168.0.25', 'AssignNum': 50, 'LeaseTime': 86400}
+[Logger] debug: [call('[AP FUNC] startdhcpd command start')]
+[Logger] error: []
+[Logger] info: []
+[Call list] static_snd_rcv_cmd: [call('test', 0, 1, 'config dhcp disable cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp delete-scope cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp create-scope cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp disable cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp address-pool cisco_controller_dhcp 192.168.0.205 192.168.0.255'),
+ call('test', 0, 1, 'config dhcp network cisco_controller_dhcp 192.168.0.0 255.255.255.0'),
+ call('test', 0, 1, 'config dhcp default-router cisco_controller_dhcp 192.168.0.25'),
+ call('test', 0, 1, 'config dhcp lease cisco_controller_dhcp 86400'),
+ call('test', 0, 1, 'config dhcp enable cisco_controller_dhcp'),
+ call('test', 0, 1, 'config wlan disable 9'),
+ call('test', 0, 1, 'config wlan dhcp_server 9 192.168.0.25'),
+ call('test', 0, 1, 'config wlan enable 9')]
+[Out] i_ret: {'Result': 0}
+PASSED
+device/AP/Cisco/test_Control.py::test_dhcpd_7 
+Test Objective: i_available_num > i_assign_num
+[In] l_com_hdr_info : test
+[In] d_tlv_param : {'WlanId': 9, 'IpAddress': '192.168.0.204', 'NetMask': '255.255.255.0', 'GateWay': '192.168.0.25', 'AssignNum': 50, 'LeaseTime': 86400}
+[Logger] debug: [call('[AP FUNC] startdhcpd command start')]
+[Logger] error: []
+[Logger] info: []
+[Call list] static_snd_rcv_cmd: [call('test', 0, 1, 'config dhcp disable cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp delete-scope cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp create-scope cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp disable cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp address-pool cisco_controller_dhcp 192.168.0.204 192.168.0.254'),
+ call('test', 0, 1, 'config dhcp network cisco_controller_dhcp 192.168.0.0 255.255.255.0'),
+ call('test', 0, 1, 'config dhcp default-router cisco_controller_dhcp 192.168.0.25'),
+ call('test', 0, 1, 'config dhcp lease cisco_controller_dhcp 86400'),
+ call('test', 0, 1, 'config dhcp enable cisco_controller_dhcp'),
+ call('test', 0, 1, 'config wlan disable 9'),
+ call('test', 0, 1, 'config wlan dhcp_server 9 192.168.0.25'),
+ call('test', 0, 1, 'config wlan enable 9')]
+[Out] i_ret: {'Result': 0}
+PASSED
+device/AP/Cisco/test_Control.py::test_dhcpd_8 
+Test Objective: static_snd_rcv_cmd error(count 1/12)
+[In] l_com_hdr_info : test
+[In] d_tlv_param : {'WlanId': 9, 'IpAddress': '192.168.0.10', 'NetMask': '255.255.255.0', 'GateWay': '192.168.0.25', 'AssignNum': 50, 'LeaseTime': 86400}
+[Logger] debug: [call('[AP FUNC] startdhcpd command start')]
+[Logger] error: []
+[Logger] info: []
+[Call list] static_snd_rcv_cmd: [call('test', 0, 1, 'config dhcp disable cisco_controller_dhcp')]
+[Out] i_ret: {'Result': -8}
+PASSED
+device/AP/Cisco/test_Control.py::test_dhcpd_9 
+Test Objective: static_snd_rcv_cmd error(count 2/12)
+[In] l_com_hdr_info : test
+[In] d_tlv_param : {'WlanId': 9, 'IpAddress': '192.168.0.10', 'NetMask': '255.255.255.0', 'GateWay': '192.168.0.25', 'AssignNum': 50, 'LeaseTime': 86400}
+[Logger] debug: [call('[AP FUNC] startdhcpd command start')]
+[Logger] error: []
+[Logger] info: []
+[Call list] static_snd_rcv_cmd: [call('test', 0, 1, 'config dhcp disable cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp delete-scope cisco_controller_dhcp')]
+[Out] i_ret: {'Result': -8}
+PASSED
+device/AP/Cisco/test_Control.py::test_dhcpd_10 
+Test Objective: static_snd_rcv_cmd error(count 3/12)
+[In] l_com_hdr_info : test
+[In] d_tlv_param : {'WlanId': 9, 'IpAddress': '192.168.0.10', 'NetMask': '255.255.255.0', 'GateWay': '192.168.0.25', 'AssignNum': 50, 'LeaseTime': 86400}
+[Logger] debug: [call('[AP FUNC] startdhcpd command start')]
+[Logger] error: []
+[Logger] info: []
+[Call list] static_snd_rcv_cmd: [call('test', 0, 1, 'config dhcp disable cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp delete-scope cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp create-scope cisco_controller_dhcp')]
+[Out] i_ret: {'Result': -8}
+PASSED
+device/AP/Cisco/test_Control.py::test_dhcpd_11 
+Test Objective: static_snd_rcv_cmd error(count 4/12)
+[In] l_com_hdr_info : test
+[In] d_tlv_param : {'WlanId': 9, 'IpAddress': '192.168.0.10', 'NetMask': '255.255.255.0', 'GateWay': '192.168.0.25', 'AssignNum': 50, 'LeaseTime': 86400}
+[Logger] debug: [call('[AP FUNC] startdhcpd command start')]
+[Logger] error: []
+[Logger] info: []
+[Call list] static_snd_rcv_cmd: [call('test', 0, 1, 'config dhcp disable cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp delete-scope cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp create-scope cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp disable cisco_controller_dhcp')]
+[Out] i_ret: {'Result': -8}
+PASSED
+device/AP/Cisco/test_Control.py::test_dhcpd_12 
+Test Objective: static_snd_rcv_cmd error(count 5/12)
+[In] l_com_hdr_info : test
+[In] d_tlv_param : {'WlanId': 9, 'IpAddress': '192.168.0.10', 'NetMask': '255.255.255.0', 'GateWay': '192.168.0.25', 'AssignNum': 50, 'LeaseTime': 86400}
+[Logger] debug: [call('[AP FUNC] startdhcpd command start')]
+[Logger] error: []
+[Logger] info: []
+[Call list] static_snd_rcv_cmd: [call('test', 0, 1, 'config dhcp disable cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp delete-scope cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp create-scope cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp disable cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp address-pool cisco_controller_dhcp 192.168.0.10 192.168.0.60')]
+[Out] i_ret: {'Result': -8}
+PASSED
+device/AP/Cisco/test_Control.py::test_dhcpd_13 
+Test Objective: static_snd_rcv_cmd error(count 6/12)
+[In] l_com_hdr_info : test
+[In] d_tlv_param : {'WlanId': 9, 'IpAddress': '192.168.0.10', 'NetMask': '255.255.255.0', 'GateWay': '192.168.0.25', 'AssignNum': 50, 'LeaseTime': 86400}
+[Logger] debug: [call('[AP FUNC] startdhcpd command start')]
+[Logger] error: []
+[Logger] info: []
+[Call list] static_snd_rcv_cmd: [call('test', 0, 1, 'config dhcp disable cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp delete-scope cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp create-scope cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp disable cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp address-pool cisco_controller_dhcp 192.168.0.10 192.168.0.60'),
+ call('test', 0, 1, 'config dhcp network cisco_controller_dhcp 192.168.0.0 255.255.255.0')]
+[Out] i_ret: {'Result': -8}
+PASSED
+device/AP/Cisco/test_Control.py::test_dhcpd_14 
+Test Objective: static_snd_rcv_cmd error(count 7/12)
+[In] l_com_hdr_info : test
+[In] d_tlv_param : {'WlanId': 9, 'IpAddress': '192.168.0.10', 'NetMask': '255.255.255.0', 'GateWay': '192.168.0.25', 'AssignNum': 50, 'LeaseTime': 86400}
+[Logger] debug: [call('[AP FUNC] startdhcpd command start')]
+[Logger] error: []
+[Logger] info: []
+[Call list] static_snd_rcv_cmd: [call('test', 0, 1, 'config dhcp disable cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp delete-scope cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp create-scope cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp disable cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp address-pool cisco_controller_dhcp 192.168.0.10 192.168.0.60'),
+ call('test', 0, 1, 'config dhcp network cisco_controller_dhcp 192.168.0.0 255.255.255.0'),
+ call('test', 0, 1, 'config dhcp default-router cisco_controller_dhcp 192.168.0.25')]
+[Out] i_ret: {'Result': -8}
+PASSED
+device/AP/Cisco/test_Control.py::test_dhcpd_15 
+Test Objective: static_snd_rcv_cmd error(count 8/12)
+[In] l_com_hdr_info : test
+[In] d_tlv_param : {'WlanId': 9, 'IpAddress': '192.168.0.10', 'NetMask': '255.255.255.0', 'GateWay': '192.168.0.25', 'AssignNum': 50, 'LeaseTime': 86400}
+[Logger] debug: [call('[AP FUNC] startdhcpd command start')]
+[Logger] error: []
+[Logger] info: []
+[Call list] static_snd_rcv_cmd: [call('test', 0, 1, 'config dhcp disable cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp delete-scope cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp create-scope cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp disable cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp address-pool cisco_controller_dhcp 192.168.0.10 192.168.0.60'),
+ call('test', 0, 1, 'config dhcp network cisco_controller_dhcp 192.168.0.0 255.255.255.0'),
+ call('test', 0, 1, 'config dhcp default-router cisco_controller_dhcp 192.168.0.25'),
+ call('test', 0, 1, 'config dhcp lease cisco_controller_dhcp 86400')]
+[Out] i_ret: {'Result': -8}
+PASSED
+device/AP/Cisco/test_Control.py::test_dhcpd_16 
+Test Objective: static_snd_rcv_cmd error(count 9/12)
+[In] l_com_hdr_info : test
+[In] d_tlv_param : {'WlanId': 9, 'IpAddress': '192.168.0.10', 'NetMask': '255.255.255.0', 'GateWay': '192.168.0.25', 'AssignNum': 50, 'LeaseTime': 86400}
+[Logger] debug: [call('[AP FUNC] startdhcpd command start')]
+[Logger] error: []
+[Logger] info: []
+[Call list] static_snd_rcv_cmd: [call('test', 0, 1, 'config dhcp disable cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp delete-scope cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp create-scope cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp disable cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp address-pool cisco_controller_dhcp 192.168.0.10 192.168.0.60'),
+ call('test', 0, 1, 'config dhcp network cisco_controller_dhcp 192.168.0.0 255.255.255.0'),
+ call('test', 0, 1, 'config dhcp default-router cisco_controller_dhcp 192.168.0.25'),
+ call('test', 0, 1, 'config dhcp lease cisco_controller_dhcp 86400'),
+ call('test', 0, 1, 'config dhcp enable cisco_controller_dhcp')]
+[Out] i_ret: {'Result': -8}
+PASSED
+device/AP/Cisco/test_Control.py::test_dhcpd_17 
+Test Objective: static_snd_rcv_cmd error(count 10/12)
+[In] l_com_hdr_info : test
+[In] d_tlv_param : {'WlanId': 9, 'IpAddress': '192.168.0.10', 'NetMask': '255.255.255.0', 'GateWay': '192.168.0.25', 'AssignNum': 50, 'LeaseTime': 86400}
+[Logger] debug: [call('[AP FUNC] startdhcpd command start')]
+[Logger] error: []
+[Logger] info: []
+[Call list] static_snd_rcv_cmd: [call('test', 0, 1, 'config dhcp disable cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp delete-scope cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp create-scope cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp disable cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp address-pool cisco_controller_dhcp 192.168.0.10 192.168.0.60'),
+ call('test', 0, 1, 'config dhcp network cisco_controller_dhcp 192.168.0.0 255.255.255.0'),
+ call('test', 0, 1, 'config dhcp default-router cisco_controller_dhcp 192.168.0.25'),
+ call('test', 0, 1, 'config dhcp lease cisco_controller_dhcp 86400'),
+ call('test', 0, 1, 'config dhcp enable cisco_controller_dhcp'),
+ call('test', 0, 1, 'config wlan disable 9')]
+[Out] i_ret: {'Result': -8}
+PASSED
+device/AP/Cisco/test_Control.py::test_dhcpd_18 
+Test Objective: static_snd_rcv_cmd error(count 11/12)
+[In] l_com_hdr_info : test
+[In] d_tlv_param : {'WlanId': 9, 'IpAddress': '192.168.0.10', 'NetMask': '255.255.255.0', 'GateWay': '192.168.0.25', 'AssignNum': 50, 'LeaseTime': 86400}
+[Logger] debug: [call('[AP FUNC] startdhcpd command start')]
+[Logger] error: []
+[Logger] info: []
+[Call list] static_snd_rcv_cmd: [call('test', 0, 1, 'config dhcp disable cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp delete-scope cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp create-scope cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp disable cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp address-pool cisco_controller_dhcp 192.168.0.10 192.168.0.60'),
+ call('test', 0, 1, 'config dhcp network cisco_controller_dhcp 192.168.0.0 255.255.255.0'),
+ call('test', 0, 1, 'config dhcp default-router cisco_controller_dhcp 192.168.0.25'),
+ call('test', 0, 1, 'config dhcp lease cisco_controller_dhcp 86400'),
+ call('test', 0, 1, 'config dhcp enable cisco_controller_dhcp'),
+ call('test', 0, 1, 'config wlan disable 9'),
+ call('test', 0, 1, 'config wlan dhcp_server 9 192.168.0.25')]
+[Out] i_ret: {'Result': -8}
+PASSED
+device/AP/Cisco/test_Control.py::test_dhcpd_19 
+Test Objective: static_snd_rcv_cmd error(count 12/12)
+[In] l_com_hdr_info : test
+[In] d_tlv_param : {'WlanId': 9, 'IpAddress': '192.168.0.10', 'NetMask': '255.255.255.0', 'GateWay': '192.168.0.25', 'AssignNum': 50, 'LeaseTime': 86400}
+[Logger] debug: [call('[AP FUNC] startdhcpd command start')]
+[Logger] error: []
+[Logger] info: []
+[Call list] static_snd_rcv_cmd: [call('test', 0, 1, 'config dhcp disable cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp delete-scope cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp create-scope cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp disable cisco_controller_dhcp'),
+ call('test', 0, 1, 'config dhcp address-pool cisco_controller_dhcp 192.168.0.10 192.168.0.60'),
+ call('test', 0, 1, 'config dhcp network cisco_controller_dhcp 192.168.0.0 255.255.255.0'),
+ call('test', 0, 1, 'config dhcp default-router cisco_controller_dhcp 192.168.0.25'),
+ call('test', 0, 1, 'config dhcp lease cisco_controller_dhcp 86400'),
+ call('test', 0, 1, 'config dhcp enable cisco_controller_dhcp'),
+ call('test', 0, 1, 'config wlan disable 9'),
+ call('test', 0, 1, 'config wlan dhcp_server 9 192.168.0.25'),
+ call('test', 0, 1, 'config wlan enable 9')]
+[Out] i_ret: {'Result': -8}
+PASSED
+device/AP/Cisco/test_Control.py::test_setipinfo_1 
+Test Objective: Normal
+[In] l_com_hdr_info : test
+[In] d_tlv_data : {'IpAddress': '192.168.0.60', 'NetMask': '255.255.255.0', 'GateWay': '192.168.0.60'}
+[Logger] debug: [call('[AP FUNC] setipinfo command start')]
+[Logger] error: []
+[Logger] info: []
+[Call list] static_snd_rcv_cmd: [call('test', 0, 1, 'config ap static-IP enable AIR-CAP3702E-Q-K9-1 192.168.0.60 255.255.255.0 192.168.0.60'),
+ call('test', 0, 1, 'show ap config 802.11a AIR-CAP3702E-Q-K9-1')]
+[Out] i_ret: {'Result': 0}
+PASSED
+device/AP/Cisco/test_Control.py::test_setipinfo_2 
+static_snd_rcv_cmd Result error: send config
+[In] l_com_hdr_info : test
+[In] d_tlv_data : {'IpAddress': '192.168.0.60', 'NetMask': '255.255.255.0', 'GateWay': '192.168.0.60'}
+[Logger] debug: [call('[AP FUNC] setipinfo command start')]
+[Logger] error: []
+[Logger] info: []
+[Call list] static_snd_rcv_cmd: [call('test', 0, 1, 'config ap static-IP enable AIR-CAP3702E-Q-K9-1 192.168.0.60 255.255.255.0 192.168.0.60')]
+[Out] i_ret: {'Result': -5}
+PASSED
+device/AP/Cisco/test_Control.py::test_setipinfo_3 
+static_snd_rcv_cmd Result error: send show
+[In] l_com_hdr_info : test
+[In] d_tlv_data : {'IpAddress': '192.168.0.60', 'NetMask': '255.255.255.0', 'GateWay': '192.168.0.60'}
+[Logger] debug: [call('[AP FUNC] setipinfo command start')]
+[Logger] error: []
+[Logger] info: []
+[Call list] static_snd_rcv_cmd: [call('test', 0, 1, 'config ap static-IP enable AIR-CAP3702E-Q-K9-1 192.168.0.60 255.255.255.0 192.168.0.60'),
+ call('test', 0, 1, 'show ap config 802.11a AIR-CAP3702E-Q-K9-1')]
+[Out] i_ret: {'Result': -5}
+PASSED
+device/AP/Cisco/test_Control.py::test_confirm_stat_1 
+Test Order: Nomal
+[In] l_com_hdr_info : [[15361]]
+[In] d_tlv_data : {'IpAddress': '192.168.0.60', 'NetMask': '255.255.255.0', 'GateWay': '192.168.0.60'}
+[Logger] debug: [call('[AP FUNC] confirm_stat command start'), call('i_dst_id_upper : 60')]
+[Logger] error: []
+[Logger] info: []
+[Call list] setipinfo : [call([[15361]], {'IpAddress': '192.168.0.60', 'NetMask': '255.255.255.0', 'GateWay': '192.168.0.60'})]
+[Out] i_ret: {'Result': 0}
+PASSED
+device/AP/Cisco/test_Control.py::test_confirm_stat_2 
+Test Order: not call setipinfo
+[In] l_com_hdr_info : [[15362]]
+[In] d_tlv_data : {'IpAddress': '192.168.0.60', 'NetMask': '255.255.255.0', 'GateWay': '192.168.0.60'}
+[Logger] debug: [call('[AP FUNC] confirm_stat command start'), call('i_dst_id_upper : 60')]
+[Logger] error: []
+[Logger] info: []
+[Call list] setipinfo : []
+[Out] i_ret: {'Result': -8}
+PASSED
+
+----------- coverage: platform win32, python 3.6.4-final-0 -----------
+Coverage HTML written to dir htmlcov
+
+
+========================== 24 passed in 1.62 seconds ==========================

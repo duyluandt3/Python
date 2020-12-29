@@ -1,0 +1,8 @@
+{
+    "DeviceType":"AP",
+    "ModelName":"RT-AC68U",
+    "ExHost":"localhost",
+    "ExPort":5100,
+    "ExBacklog":1,
+    "ExBufsize":4096
+}

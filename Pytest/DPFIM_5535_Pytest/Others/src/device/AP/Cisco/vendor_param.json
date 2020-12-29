@@ -1,0 +1,8 @@
+{
+    "ApName" : "AIR-CAP3702E-Q-K9-2",
+    "Baudrate" : 9600,
+    "ComPort" : "/dev/ttyUSB1",
+    "User" : "admin",
+    "Password" : "a1B2c3",
+    "Controller_Ip": "192.168.0.25"
+}

@@ -1,0 +1,497 @@
+{
+  "DataList": {
+    "ID": 0,
+    "Length": 1,
+    "Value": {}
+  },
+  "Result": {
+    "ID": 1,
+    "Length": 2,
+    "Value": 0
+  },
+  "OnOffFlag": {
+    "ID": 2,
+    "Length": 1,
+    "Value": 0
+  },
+  "Date": {
+    "ID": 3,
+    "Length": 4,
+    "Value": 0
+  },
+  "Time": {
+    "ID": 4,
+    "Length": 4,
+    "Value": 0
+  },
+  "Role": {
+    "ID": 5,
+    "Length": 1,
+    "Value": 0
+  },
+  "User": {
+    "ID": 6,
+    "Length": 0,
+    "Value": ""
+  },
+  "Password": {
+    "ID": 7,
+    "Length": 0,
+    "Value": ""
+  },
+  "OffsetTime": {
+    "ID": 8,
+    "Length": 4,
+    "Value": 0
+  },
+  "LogData": {
+    "ID": 9,
+    "Length": 0,
+    "Value": ""
+  },
+  "Ssid": {
+    "ID": 10,
+    "Length": 0,
+    "Value": ""
+  },
+  "MacAddress": {
+    "ID": 11,
+    "Length": 6,
+    "Value": ""
+  },
+  "WepKey": {
+    "ID": 12,
+    "Length": 0,
+    "Value": ""
+  },
+  "WpaPassphrase": {
+    "ID": 13,
+    "Length": 0,
+    "Value": ""
+  },
+  "SaePassword": {
+    "ID": 14,
+    "Length": 0,
+    "Value": ""
+  },
+  "Channel": {
+    "ID": 15,
+    "Length": 2,
+    "Value": 0
+  },
+  "Bandwidth": {
+    "ID": 16,
+    "Length": 1,
+    "Value": 0
+  },
+  "Sideband": {
+    "ID": 17,
+    "Length": 1,
+    "Value": 0
+  },
+  "SrcId": {
+    "ID": 18,
+    "Length": 2,
+    "Value": 0
+  },
+  "DstId": {
+    "ID": 19,
+    "Length": 2,
+    "Value": 0
+  },
+  "LogName": {
+    "ID": 20,
+    "Length": 0,
+    "Value": ""
+  },
+  "LogType": {
+    "ID": 21,
+    "Length": 1,
+    "Value": 0
+  },
+  "LogLevel": {
+    "ID": 22,
+    "Length": 1,
+    "Value": 0
+  },
+  "NumOfIf": {
+    "ID": 23,
+    "Length": 1,
+    "Value": 0
+  },
+  "IfType": {
+    "ID": 24,
+    "Length": 1,
+    "Value": 0
+  },
+  "Band": {
+    "ID": 25,
+    "Length": 1,
+    "Value": 1
+  },
+  "CountryCode": {
+    "ID": 4097,
+    "Length": 2,
+    "Value": "US"
+  },
+  "RevisionCode": {
+    "ID": 4098,
+    "Length": 4,
+    "Value": 0
+  },
+  "Rssi": {
+    "ID": 4099,
+    "Length": 2,
+    "Value": 0
+  },
+  "AuthFlg": {
+    "ID": 4100,
+    "Length": 1,
+    "Value": 0
+  },
+  "KeyIdx": {
+    "ID": 4101,
+    "Length": 1,
+    "Value": 0
+  },
+  "KeyMgmt": {
+    "ID": 4102,
+    "Length": 1,
+    "Value": 0
+  },
+  "WpaType": {
+    "ID": 4103,
+    "Length": 1,
+    "Value": 0
+  },
+  "WpaPairwise": {
+    "ID": 4104,
+    "Length": 1,
+    "Value": 0
+  },
+  "Pmf": {
+    "ID": 4105,
+    "Length": 1,
+    "Value": 0
+  },
+  "PmfSettings": {
+    "ID": 4106,
+    "Length": 1,
+    "Value": 0
+  },
+  "PowerSaveMode": {
+    "ID": 4107,
+    "Length": 1,
+    "Value": 0
+  },
+  "Rate": {
+    "ID": 4108,
+    "Length": 2,
+    "Value": 0
+  },
+  "Rxdfrmucast": {
+    "ID": 4109,
+    "Length": 4,
+    "Value": 0
+  },
+  "Rxdfrmocast": {
+    "ID": 4110,
+    "Length": 4,
+    "Value": 0
+  },
+  "Rxdfrmmcast": {
+    "ID": 4111,
+    "Length": 4,
+    "Value": 0
+  },
+  "ReasonCode": {
+    "ID": 4112,
+    "Length": 4,
+    "Value": 0
+  },
+  "SpectType": {
+    "ID": 4113,
+    "Length": 1,
+    "Value": 0
+  },
+  "ScanType": {
+    "ID": 8193,
+    "Length": 1,
+    "Value": 0
+  },
+  "NumOfAp": {
+    "ID": 8194,
+    "Length": 1,
+    "Value": 0
+  },
+  "SecurityType": {
+    "ID": 8195,
+    "Length": 1,
+    "Value": 0
+  },
+  "SecurityString": {
+    "ID": 8196,
+    "Length": 1,
+    "Value": ""
+  },
+  "NumOfChannel": {
+    "ID": 8197,
+    "Length": 1,
+    "Value": 0
+  },
+  "EventNum": {
+    "ID": 8198,
+    "Length": 2,
+    "Value": 0
+  },
+  "Pktengrxducast": {
+    "ID": 8199,
+    "Length": 4,
+    "Value": 1
+  },
+  "Pktengrxdmcast": {
+    "ID": 8200,
+    "Length": 4,
+    "Value": 1
+  },
+  "ChannelStatus": {
+    "ID": 8201,
+    "Length": 4,
+    "Value": 1
+  },
+  "ChannelMinutes": {
+    "ID": 8202,
+    "Length": 1,
+    "Value": 1
+  },
+  "IeFlg": {
+    "ID": 8203,
+    "Length": 1,
+    "Value": 0
+  },
+  "VersionType": {
+    "ID": 8204,
+    "Length": 1,
+    "Value": 1
+  },
+  "VersionString": {
+    "ID": 8205,
+    "Length": 0,
+    "Value": "VER"
+  },
+  "ApiTest": {
+    "ID": 8206,
+    "Length": 1,
+    "Value": 0
+  },
+  "ScanResultNum": {
+    "ID": 8207,
+    "Length": 1,
+    "Value": 0
+  },
+  "MaxAssoc": {
+    "ID": 12289,
+    "Length": 1,
+    "Value": 0
+  },
+  "NumOfSta": {
+    "ID": 12290,
+    "Length": 1,
+    "Value": 0
+  },
+  "WlanId": {
+    "ID": 12291,
+    "Length": 1,
+    "Value": 0
+  },
+  "Location": {
+    "ID": 12292,
+    "Length": 1,
+    "Value": 0
+  },
+  "ProfileName": {
+    "ID": 12293,
+    "Length": 0,
+    "Value": ""
+  },
+  "IpAddress": {
+    "ID": 16385,
+    "Length": 4,
+    "Value": ""
+  },
+  "NetMask": {
+    "ID": 16386,
+    "Length": 4,
+    "Value": ""
+  },
+  "GateWay": {
+    "ID": 16387,
+    "Length": 4,
+    "Value": ""
+  },
+  "Interval": {
+    "ID": 16388,
+    "Length": 2,
+    "Value": 0
+  },
+  "TotalTime": {
+    "ID": 16389,
+    "Length": 2,
+    "Value": 0
+  },
+  "PacketNum": {
+    "ID": 16390,
+    "Length": 2,
+    "Value": 0
+  },
+  "PacketSize": {
+    "ID": 16391,
+    "Length": 2,
+    "Value": 0
+  },
+  "IperfModeType": {
+    "ID": 16392,
+    "Length": 1,
+    "Value": 0
+  },
+  "IperfCmdString": {
+    "ID": 16393,
+    "Length": 0,
+    "Value": ""
+  },
+  "AssignNum": {
+    "ID": 16394,
+    "Length": 2,
+    "Value": 0
+  },
+  "LeaseTime": {
+    "ID": 16395,
+    "Length": 4,
+    "Value": 0
+  },
+  "CaptureFileName": {
+    "ID": 20481,
+    "Length": 0,
+    "Value": ""
+  },
+  "ControlFreq": {
+    "ID": 20482,
+    "Length": 2,
+    "Value": 0
+  },
+  "CenterFreq": {
+    "ID": 20483,
+    "Length": 2,
+    "Value": 0
+  },
+  "AnalyzeMsg": {
+    "ID": 20484,
+    "Length": 2,
+    "Value": 0
+  },
+  "CaptureStartTime": {
+    "ID": 20485,
+    "Length": 4,
+    "Value": 0
+  },
+  "CaptureEndTime": {
+    "ID": 20486,
+    "Length": 4,
+    "Value": 0
+  },
+  "NumOfMsg": {
+    "ID": 20487,
+    "Length": 2,
+    "Value": 0
+  },
+  "TimeList": {
+    "ID": 20488,
+    "Length": 0,
+    "Value": ""
+  },
+  "RadioTapList": {
+    "ID": 20489,
+    "Length": 0,
+    "Value": ""
+  },
+  "IeList": {
+    "ID": 20490,
+    "Length": 0,
+    "Value": ""
+  },
+  "DestAddr": {
+    "ID": 20491,
+    "Length": 6,
+    "Value": ""
+  },
+  "TransAddr": {
+    "ID": 20492,
+    "Length": 6,
+    "Value": ""
+  },
+  "SourceAddr": {
+    "ID": 20493,
+    "Length": 6,
+    "Value": ""
+  },
+  "NumOfLink": {
+    "ID": 20494,
+    "Length": 1,
+    "Value": 0
+  },
+  "AircapIfId": {
+    "ID": 20495,
+    "Length": 1,
+    "Value": 0
+  },
+  "TriggerMsg": {
+    "ID": 20496,
+    "Length": 2,
+    "Value": 0
+  },
+  "Direction": {
+    "ID": 20497,
+    "Length": 1,
+    "Value": 0
+  },
+  "ReferenceData": {
+    "ID": 20498,
+    "Length": 0,
+    "Value": ""
+  },
+  "NumOfPkt": {
+    "ID": 20499,
+    "Length": 2,
+    "Value": 0
+  },
+  "ChkResult": {
+    "ID": 20500,
+    "Length": 1,
+    "Value": 0
+  },
+  "NgReason": {
+    "ID": 20501,
+    "Length": 1,
+    "Value": 0
+  },
+  "NgIeName": {
+    "ID": 20502,
+    "Length": 0,
+    "Value": ""
+  },
+  "NgIeValueLen": {
+    "ID": 20503,
+    "Length": 2,
+    "Value": 0
+  },
+  "NgIeValue": {
+    "ID": 20504,
+    "Length": 0,
+    "Value": ""
+  },
+  "NumOfNg": {
+    "ID": 20505,
+    "Length": 2,
+    "Value": 0
+  }  
+}

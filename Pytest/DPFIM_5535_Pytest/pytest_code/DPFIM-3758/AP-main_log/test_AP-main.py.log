@@ -1,0 +1,57 @@
+============================= test session starts =============================
+platform win32 -- Python 3.6.4, pytest-4.0.0, py-1.7.0, pluggy-0.8.0 -- c:\users\m11083h\appdata\local\programs\python\python36-32\python.exe
+cachedir: .pytest_cache
+rootdir: D:\02_案件\自動評価\コーディング\Others\src, inifile:
+plugins: cov-2.6.0
+collecting ... collected 2 items
+
+device/AP/test_AP-main.py::test_call_apfunc_1 
+TEST Order: dhcpd function call
+[In] l_com_hdr_info: [['test', 'test2', 15]]
+[In] d_tlv_param: 
+[Out] i_ret: 0
+[Call count] cls_ap_func.attach: 0
+[Call count] cls_ap_func.date: 0
+[Call count] cls_ap_func.ssid: 0
+[Call count] cls_ap_func.open: 0
+[Call count] cls_ap_func.wep: 0
+[Call count] cls_ap_func.wpa: 0
+[Call count] cls_ap_func.channel: 0
+[Call count] cls_ap_func.country: 0
+[Call count] cls_ap_func.stealth: 0
+[Call count] cls_ap_func.controlbss: 0
+[Call count] cls_ap_func.stalist: 0
+[Call count] cls_ap_func.control11n: 0
+[Call count] cls_ap_func.detach: 0
+[Call count] cls_ap_func.confirm_stat: 0
+[Call count] cls_ap_func.dhcpd: 1
+[Call count] cls_ap_func.setipinfo: 0
+PASSED
+device/AP/test_AP-main.py::test_call_apfunc_2 
+TEST Order: setipinfo function call
+[In] l_com_hdr_info: [['test', 'test2', 10]]
+[In] d_tlv_param: 
+[Out] i_ret: 0
+[Call count] cls_ap_func.attach: 0
+[Call count] cls_ap_func.date: 0
+[Call count] cls_ap_func.ssid: 0
+[Call count] cls_ap_func.open: 0
+[Call count] cls_ap_func.wep: 0
+[Call count] cls_ap_func.wpa: 0
+[Call count] cls_ap_func.channel: 0
+[Call count] cls_ap_func.country: 0
+[Call count] cls_ap_func.stealth: 0
+[Call count] cls_ap_func.controlbss: 0
+[Call count] cls_ap_func.stalist: 0
+[Call count] cls_ap_func.control11n: 0
+[Call count] cls_ap_func.detach: 0
+[Call count] cls_ap_func.confirm_stat: 0
+[Call count] cls_ap_func.dhcpd: 0
+[Call count] cls_ap_func.setipinfo: 1
+PASSED
+
+----------- coverage: platform win32, python 3.6.4-final-0 -----------
+Coverage HTML written to dir htmlcov
+
+
+========================== 2 passed in 1.89 seconds ===========================

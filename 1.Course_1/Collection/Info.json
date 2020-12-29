@@ -1,0 +1,10 @@
+{
+	"name":"Luan",
+	"age":27,
+	"Languages":["C","C++","C#","Python","VBA"],
+	"jobs":[
+	    {"Place":"NYC", "Title":"GL"},
+		{"Place":"AW", "Title":"Develope"},
+		{"Place":"FJP", "Title":"BrSE"}
+    ]
+}

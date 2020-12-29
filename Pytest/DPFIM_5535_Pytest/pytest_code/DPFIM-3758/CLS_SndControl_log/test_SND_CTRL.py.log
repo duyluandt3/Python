@@ -1,0 +1,998 @@
+============================= test session starts =============================
+platform win32 -- Python 3.6.4, pytest-4.0.0, py-1.7.0, pluggy-0.8.0 -- c:\users\m11083h\appdata\local\programs\python\python36-32\python.exe
+cachedir: .pytest_cache
+rootdir: D:\02_案件\自動評価\コーディング\Control_PC\src, inifile:
+plugins: cov-2.6.0
+collecting ... collected 77 items
+
+class/test_SND_CTRL.py::test_SND_Update_IpAddress_1 
+Test Objective: Normal
+[In] i_src_id: 0x101
+[In] s_Ipaddr: 192.168.0.10
+d_instance_id_list: {257: {'Con_info': 'dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': ''}, 258: {'Con_info': 'dev/ttyUSB1', 'Dst_id': 2562, 'Device_info': 'DUT2', 'Ipaddr': ''}}
+[Logger] debug: [call('d_instance_id_list[257][Ipaddr]:192.168.0.10')]
+[Logger] error: []
+[Logger] info: []
+d_instance_id_list: {257: {'Con_info': 'dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': '192.168.0.10'}, 258: {'Con_info': 'dev/ttyUSB1', 'Dst_id': 2562, 'Device_info': 'DUT2', 'Ipaddr': ''}}
+PASSED
+class/test_SND_CTRL.py::test_SND_Check_IpAddress_1 
+Test Objective: Normal
+[In] i_dst_id: 0xa01
+[In] s_Ipaddr: 192.168.0.10
+[In] d_testParam: {'IpAddress': '192.168.0.10'}
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: []
+[Out] i_ret: 0
+[Call count] SND_Update_IpAddress: 1
+PASSED
+class/test_SND_CTRL.py::test_SND_Check_IpAddress_2 
+Test Objective: IPAddress disagreement
+[In] i_dst_id: 0xa01
+[In] s_Ipaddr: 192.168.0.20
+[In] d_testParam: {'IpAddress': '192.168.0.10'}
+[Logger] debug: []
+[Logger] error: [call('IPAddress is diffrente!!')]
+[Logger] info: []
+[Out] i_ret: -3
+[Call count] SND_Update_IpAddress: 0
+PASSED
+class/test_SND_CTRL.py::test_SND_Check_IpAddress_3 
+Test Objective: dst_id disagreement
+[In] i_dst_id: 0xa03
+[In] s_Ipaddr: 192.168.0.10
+[In] d_testParam: {'IpAddress': '192.168.0.10'}
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: []
+[Out] i_ret: 0
+[Call count] SND_Update_IpAddress: 0
+PASSED
+class/test_SND_CTRL.py::test_SND_Delete_IpAddress_1 
+Test Objective: Normal
+[In] i_dst_id: 0xa02
+d_instance_id_list: {257: {'Con_info': 'dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': '192.168.0.10'}, 258: {'Con_info': 'dev/ttyUSB1', 'Dst_id': 2562, 'Device_info': 'DUT2', 'Ipaddr': '192.168.0.11'}}
+[Logger] debug: [call('d_instance_id_list[258][Ipaddr]:')]
+[Logger] error: []
+[Logger] info: []
+d_instance_id_list: {257: {'Con_info': 'dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': '192.168.0.10'}, 258: {'Con_info': 'dev/ttyUSB1', 'Dst_id': 2562, 'Device_info': 'DUT2', 'Ipaddr': ''}}
+PASSED
+class/test_SND_CTRL.py::test_SND_Delete_IpAddress_2 
+Test Objective: dst_id disagreement
+[In] i_dst_id: 0xa03
+d_instance_id_list: {257: {'Con_info': 'dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': '192.168.0.10'}, 258: {'Con_info': 'dev/ttyUSB1', 'Dst_id': 2562, 'Device_info': 'DUT2', 'Ipaddr': '192.168.0.11'}}
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: []
+d_instance_id_list: {257: {'Con_info': 'dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': '192.168.0.10'}, 258: {'Con_info': 'dev/ttyUSB1', 'Dst_id': 2562, 'Device_info': 'DUT2', 'Ipaddr': '192.168.0.11'}}
+PASSED
+class/test_SND_CTRL.py::test_SND_Initialize_InstanceID_1 
+Test Objective: Normal com_port
+[In] none
+d_instance_id_list: {257: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': '192.168.0.10'}, 258: {'Con_info': '/dev/ttyUSB1', 'Dst_id': 2562, 'Device_info': 'DUT2', 'Ipaddr': '192.168.0.11'}}
+[Logger] debug: [call('d_connect_info:/dev/ttyUSB0'), call('Con_info equal !!! [/dev/ttyUSB0]')]
+[Logger] error: []
+[Logger] info: []
+d_instance_id_list: {257: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2560, 'Device_info': 'DUT1', 'Ipaddr': '192.168.0.10'}, 258: {'Con_info': '/dev/ttyUSB1', 'Dst_id': 2562, 'Device_info': 'DUT2', 'Ipaddr': '192.168.0.11'}}
+PASSED
+class/test_SND_CTRL.py::test_SND_Initialize_InstanceID_2 
+Test Objective: Normal host and port
+[In] none
+d_instance_id_list: {257: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': '192.168.0.10'}, 258: {'Con_info': ('192.168.0.20', 5010), 'Dst_id': 2562, 'Device_info': 'DUT2', 'Ipaddr': '192.168.0.11'}}
+[Logger] debug: [call("d_connect_info:('192.168.0.20', 5010)"),
+ call("Con_info equal !!! [('192.168.0.20', 5010)]")]
+[Logger] error: []
+[Logger] info: []
+d_instance_id_list: {257: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': '192.168.0.10'}, 258: {'Con_info': ('192.168.0.20', 5010), 'Dst_id': 2560, 'Device_info': 'DUT2', 'Ipaddr': '192.168.0.11'}}
+PASSED
+class/test_SND_CTRL.py::test_SND_Initialize_InstanceID_3 
+Test Objective: com_port mismatch
+[In] none
+d_instance_id_list: {257: {'Con_info': '(192.168.0.20, 5010)', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': '192.168.0.10'}, 258: {'Con_info': 'dev/ttyUSB2', 'Dst_id': 2562, 'Device_info': 'DUT2', 'Ipaddr': '192.168.0.11'}}
+[Logger] debug: [call('d_connect_info:/dev/ttyUSB0')]
+[Logger] error: []
+[Logger] info: []
+d_instance_id_list: {257: {'Con_info': '(192.168.0.20, 5010)', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': '192.168.0.10'}, 258: {'Con_info': 'dev/ttyUSB2', 'Dst_id': 2562, 'Device_info': 'DUT2', 'Ipaddr': '192.168.0.11'}}
+PASSED
+class/test_SND_CTRL.py::test_SND_Update_InstanceID_1 
+Test Objective: Normal
+[In] d_rply_tlv: {'Result': 0, 'NumOfIf': 1, 'DataList': [{0: {'SrcId': 258}, 1: {'DstId': 1}}]}
+d_instance_id_list: {257: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2560, 'Device_info': 'DUT1', 'Ipaddr': '192.168.0.10'}, 258: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2560, 'Device_info': 'DUT2', 'Ipaddr': '192.168.0.11'}}
+[Logger] debug: [call("InstanceID list after InitWLAN com : {257: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2560, 'Device_info': 'DUT1', 'Ipaddr': '192.168.0.10'}, 258: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 1, 'Device_info': 'DUT2', 'Ipaddr': '192.168.0.11'}}")]
+[Logger] error: []
+[Logger] info: [call('i_if_num:1')]
+[Out] i_ret: 0
+d_instance_id_list: {257: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2560, 'Device_info': 'DUT1', 'Ipaddr': '192.168.0.10'}, 258: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 1, 'Device_info': 'DUT2', 'Ipaddr': '192.168.0.11'}}
+PASSED
+class/test_SND_CTRL.py::test_SND_Update_InstanceID_2 
+Test Objective: NumOfIf is none
+[In] d_rply_tlv: {'Result': 0, 'DataList': [{0: {'SrcId': 258}, 1: {'DstId': 1}}]}
+d_instance_id_list: {257: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': '192.168.0.10'}, 258: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2562, 'Device_info': 'DUT2', 'Ipaddr': '192.168.0.11'}}
+[Logger] debug: []
+[Logger] error: [call('[IF] InitWLAN response: NumOfIf is none !!')]
+[Logger] info: []
+[Out] i_ret: -3
+d_instance_id_list: {257: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': '192.168.0.10'}, 258: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2562, 'Device_info': 'DUT2', 'Ipaddr': '192.168.0.11'}}
+PASSED
+class/test_SND_CTRL.py::test_SND_Update_InstanceID_3 
+Test Objective: DataList is none
+[In] d_rply_tlv: {'Result': 0, 'NumOfIf': 1}
+d_instance_id_list: {257: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': '192.168.0.10'}, 258: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2562, 'Device_info': 'DUT2', 'Ipaddr': '192.168.0.11'}}
+[Logger] debug: []
+[Logger] error: [call('DataList is none !!')]
+[Logger] info: [call('i_if_num:1')]
+[Out] i_ret: -3
+d_instance_id_list: {257: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': '192.168.0.10'}, 258: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2562, 'Device_info': 'DUT2', 'Ipaddr': '192.168.0.11'}}
+PASSED
+class/test_SND_CTRL.py::test_SND_Update_InstanceID_4 
+Test Objective: DataList num is unmatch
+[In] d_rply_tlv: {'Result': 0, 'NumOfIf': 2, 'DataList': [{0: {'SrcId': 258}, 1: {'DstId': 1}}]}
+d_instance_id_list: {257: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': '192.168.0.10'}, 258: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2562, 'Device_info': 'DUT2', 'Ipaddr': '192.168.0.11'}}
+[Logger] debug: []
+[Logger] error: [call("DataList : DataList num is unmatch ! 2[{0: {'SrcId': 258}, 1: {'DstId': 1}}]"),
+ call('InitWLAN : NumOfIf is none !!')]
+[Logger] info: [call('i_if_num:2')]
+[Out] i_ret: -3
+d_instance_id_list: {257: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': '192.168.0.10'}, 258: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2562, 'Device_info': 'DUT2', 'Ipaddr': '192.168.0.11'}}
+PASSED
+class/test_SND_CTRL.py::test_SND_Update_InstanceID_5 
+Test Objective: SrcId and DstId none
+[In] d_rply_tlv: {'Result': 0, 'NumOfIf': 1, 'DataList': [{0: {'test_SrcId': 258}, 1: {'test_DstId': 1}}]}
+d_instance_id_list: {257: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': '192.168.0.10'}, 258: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2562, 'Device_info': 'DUT2', 'Ipaddr': '192.168.0.11'}}
+[Logger] debug: []
+[Logger] error: [call('[IF] InitWLAN response : SrcId or DstId is none !!')]
+[Logger] info: [call('i_if_num:1')]
+[Out] i_ret: -3
+d_instance_id_list: {257: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': '192.168.0.10'}, 258: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2562, 'Device_info': 'DUT2', 'Ipaddr': '192.168.0.11'}}
+PASSED
+class/test_SND_CTRL.py::test_SND_Set_Dhcpd_Command_1 
+Test Objective: Normal
+[In] i_src_id: 0x102
+[In] d_testParam: {}
+d_instance_id_list: {257: {'Con_info': 'dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': '192.168.0.10'}, 258: {'Con_info': 'dev/ttyUSB1', 'Dst_id': 2562, 'Device_info': 'AP', 'Ipaddr': '192.168.0.60'}}
+[Logger] debug: [call('Set d_testParam[IpAddress] : 192.168.0.10'),
+ call('Set d_testParam[Netmask] : 255.255.255.0'),
+ call('Set d_testParam[GateWay] : 192.168.0.60'),
+ call('Set d_testParam[AssignNum] : 50'),
+ call('Set d_testParam[LeaseTime] : 86400')]
+[Logger] error: []
+[Logger] info: []
+[Out] d_testParam: {'IpAddress': '192.168.0.10', 'NetMask': '255.255.255.0', 'GateWay': '192.168.0.60', 'AssignNum': 50, 'LeaseTime': 86400}
+PASSED
+class/test_SND_CTRL.py::test_SND_Set_Dhcpd_Command_2 
+Test Objective: Do not set parameters
+[In] i_src_id: 0x102
+[In] d_testParam: {'IpAddress': '192.168.0.100', 'NetMask': '255.255.254.0', 'GateWay': '192.168.0.1', 'AssignNum': 25, 'LeaseTime': 3600}
+d_instance_id_list: {257: {'Con_info': 'dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': '192.168.0.10'}, 258: {'Con_info': 'dev/ttyUSB1', 'Dst_id': 2562, 'Device_info': 'AP', 'Ipaddr': '192.168.0.60'}}
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: []
+[Out] d_testParam: {'IpAddress': '192.168.0.100', 'NetMask': '255.255.254.0', 'GateWay': '192.168.0.1', 'AssignNum': 25, 'LeaseTime': 3600}
+PASSED
+class/test_SND_CTRL.py::test_SND_Get_IpAddress_1 
+Test Objective: Normal
+[In] d_testParam: {'DestDeviceInfoKey': 'DUT1'}
+d_instance_id_list: {257: {'Con_info': 'dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': '192.168.0.10'}, 258: {'Con_info': 'dev/ttyUSB1', 'Dst_id': 2562, 'Device_info': 'DUT2', 'Ipaddr': '192.168.0.11'}}
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: []
+[Out] i_ret: 0
+[Out] d_testParam: {'DestDeviceInfoKey': 'DUT1', 'DestIpAddress': '192.168.0.10'}
+PASSED
+class/test_SND_CTRL.py::test_SND_Get_IpAddress_2 
+Test Objective: Get from the second of the list 
+[In] d_testParam: {'DestDeviceInfoKey': 'DUT1'}
+d_instance_id_list: {257: {'Con_info': 'dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT2', 'Ipaddr': '192.168.0.10'}, 258: {'Con_info': 'dev/ttyUSB1', 'Dst_id': 2562, 'Device_info': 'DUT1', 'Ipaddr': '192.168.0.11'}}
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: []
+[Out] i_ret: 0
+[Out] d_testParam: {'DestDeviceInfoKey': 'DUT1', 'DestIpAddress': '192.168.0.11'}
+PASSED
+class/test_SND_CTRL.py::test_SND_Get_IpAddress_3 
+Test Objective: DestIpAddress description 
+[In] d_testParam: {'DestDeviceInfoKey': 'DUT1', 'DestIpAddress': '192.168.0.20'}
+d_instance_id_list: {257: {'Con_info': 'dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': '192.168.0.10'}, 258: {'Con_info': 'dev/ttyUSB1', 'Dst_id': 2562, 'Device_info': 'DUT2', 'Ipaddr': '192.168.0.11'}}
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: []
+[Out] i_ret: 0
+[Out] d_testParam: {'DestDeviceInfoKey': 'DUT1', 'DestIpAddress': '192.168.0.20'}
+PASSED
+class/test_SND_CTRL.py::test_SND_Get_IpAddress_4 
+Test Objective: No description of DestDeviceInfoKey 
+[In] d_testParam: {'DeviceInfoKey': 'DUT1'}
+d_instance_id_list: {257: {'Con_info': 'dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': '192.168.0.10'}, 258: {'Con_info': 'dev/ttyUSB1', 'Dst_id': 2562, 'Device_info': 'DUT2', 'Ipaddr': '192.168.0.11'}}
+[Logger] debug: []
+[Logger] error: [call('DestIpAddress and DestDeviceInfoKey are                               not included')]
+[Logger] info: []
+[Out] i_ret: -3
+[Out] d_testParam: {'DeviceInfoKey': 'DUT1'}
+PASSED
+class/test_SND_CTRL.py::test_SND_Get_IpAddress_5 
+Test Objective: I can't find a match DestDeviceInfoKey. 
+[In] d_testParam: {'DestDeviceInfoKey': 'DUT'}
+d_instance_id_list: {257: {'Con_info': 'dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': '192.168.0.10'}, 258: {'Con_info': 'dev/ttyUSB1', 'Dst_id': 2562, 'Device_info': 'DUT2', 'Ipaddr': '192.168.0.11'}}
+[Logger] debug: []
+[Logger] error: [call("I can't find a match DestDeviceInfoKey")]
+[Logger] info: []
+[Out] i_ret: -3
+[Out] d_testParam: {'DestDeviceInfoKey': 'DUT'}
+PASSED
+class/test_SND_CTRL.py::test_SND_Set_Ping_Command_1 
+Test Objective: Normal
+[In] d_testParam: {'DestIpAddress': '192.168.0.10'}
+[Logger] debug: [call('Set d_testParam[IpAddress] : 192.168.0.10'),
+ call('Remove DestIpAddress in d_testParam')]
+[Logger] error: []
+[Logger] info: []
+[Out] i_ret: 0
+[Out] d_testPram: {'IpAddress': '192.168.0.10'}
+PASSED
+class/test_SND_CTRL.py::test_SND_Set_Ping_Command_2 
+Test Objective: DestDeviceInfokey Delete
+[In] d_testParam: {'DestIpAddress': '192.168.0.10', 'DestDeviceInfoKey': 'ENDPOINT'}
+[Logger] debug: [call('Set d_testParam[IpAddress] : 192.168.0.10'),
+ call('Remove DestDeviceInfoKey in d_testParam'),
+ call('Remove DestIpAddress in d_testParam')]
+[Logger] error: []
+[Logger] info: []
+[Out] i_ret: 0
+[Out] d_testPram: {'IpAddress': '192.168.0.10'}
+PASSED
+class/test_SND_CTRL.py::test_SND_Set_Ping_Command_3 
+Test Objective: SND_Get_IpAddress error
+[In] d_testParam: {'DestIpAddress': '192.168.0.10', 'DestDeviceinfoKey': 'ENDPOINT'}
+[Logger] debug: []
+[Logger] error: [call('StartPing Missing Parameter!!')]
+[Logger] info: []
+[Out] i_ret: -3
+[Out] d_testPram: {'DestIpAddress': '192.168.0.10', 'DestDeviceinfoKey': 'ENDPOINT'}
+PASSED
+class/test_SND_CTRL.py::test_SND_Set_Iperf_Command_1 
+Test Objective: client
+[In] d_testParam: {'IperfModeType': 2, 'IperfCmdString': '-t90 -i1', 'DestIpAddress': '192.168.0.10', 'DestDeviceInfoKey': 'ENDPOINT'}
+[Logger] debug: [call('d_testParam[IperfCmdString] =                                    -c 192.168.0.10 -t90 -i1'),
+ call('Remove DestDeviceInfoKey in d_testParam'),
+ call('Remove DestIpAddress in d_testParam')]
+[Logger] error: []
+[Logger] info: []
+[Out] i_ret: 0
+[Out] d_testParam: {'IperfModeType': 2, 'IperfCmdString': '-c 192.168.0.10 -t90 -i1'}
+PASSED
+class/test_SND_CTRL.py::test_SND_Set_Iperf_Command_3 
+Test Objective: IperfModeType none
+[In] d_testParam: {'IperfCmdString': '-t90 -i1', 'DestIpAddress': '192.168.0.10'}
+[Logger] debug: []
+[Logger] error: [call('IperfModeType is none!!')]
+[Logger] info: []
+[Out] i_ret: -3
+[Out] d_testParam: {'IperfCmdString': '-t90 -i1', 'DestIpAddress': '192.168.0.10'}
+PASSED
+class/test_SND_CTRL.py::test_SND_Set_Iperf_Command_4 
+Test SND_Get_IpAddress error
+[In] d_testParam: {'IperfModeType': 2, 'IperfCmdString': '-t90 -i1', 'DestIpAddress': '192.168.0.10'}
+[Logger] debug: [call('Remove DestIpAddress in d_testParam')]
+[Logger] error: [call('StartIperf Missing Parameter!!')]
+[Logger] info: []
+[Out] i_ret: -3
+[Out] d_testParam: {'IperfModeType': 2, 'IperfCmdString': '-t90 -i1'}
+PASSED
+class/test_SND_CTRL.py::test_SND_Set_Iperf_Command_2 
+Test Objective: Not DestIpAddress and DestDeviceInfoKey
+[In] d_testParam: {'IperfModeType': 1, 'IperfCmdString': '-i1'}
+[Logger] debug: [call('d_testParam[IperfCmdString] =                                -s -i1')]
+[Logger] error: []
+[Logger] info: []
+[Out] i_ret: 0
+[Out] d_testParam: {'IperfModeType': 1, 'IperfCmdString': '-s -i1'}
+PASSED
+class/test_SND_CTRL.py::test_SND_Set_Time_Command_1 
+Test Objective: Normal
+[In] i_src_id: 0x101
+[In] d_testParam: {}
+[In] cls_log: <CLS_Log.LOG_CTRL object at 0x030FB230>
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: []
+[Out] d_testParam: {'Date': '20181221', 'Time': '090001'}
+PASSED
+class/test_SND_CTRL.py::test_SND_Set_InitWLAN_Command_1 
+Test Objective: Normal
+[In] i_src_id: 0x101
+[In] d_testParam: {'NumOfIf': 1, 'DataList': {0: {'Role': 1}}}
+[In] cls_log: 
+d_instance_id_list: {257: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': ''}, 258: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT2', 'Ipaddr': ''}}
+[Logger] debug: [call('s_com_port : /dev/ttyUSB0'),
+ call('s_host : '),
+ call('i_port : '),
+ call('d_connect_info:/dev/ttyUSB0'),
+ call('Con_info equal !!! [/dev/ttyUSB0]'),
+ call('src_id list : [258]'),
+ call("d_testParam : {'NumOfIf': 1, 'DataList': {0: {'Role': 1, 'SrcId': 258, 'DstId': 2561}}}")]
+[Logger] error: []
+[Logger] info: []
+[Out] i_ret: 0
+[Out] d_testParam: {'NumOfIf': 1, 'DataList': {0: {'Role': 1, 'SrcId': 258, 'DstId': 2561}}}
+d_instance_id_list: {257: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': ''}, 258: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT2', 'Ipaddr': ''}}
+PASSED
+class/test_SND_CTRL.py::test_SND_Set_InitWLAN_Command_2 
+Test Objective: NumOfIf none
+[In] i_src_id: 0x101
+[In] d_testParam: {'DataList': {0: {'Role': 1}}}
+[In] cls_log: 
+d_instance_id_list: {257: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': ''}, 258: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT2', 'Ipaddr': ''}}
+[Logger] debug: []
+[Logger] error: [call('[IF] InitWLAN : NumOfIf is none !!')]
+[Logger] info: []
+[Out] i_ret: -3
+[Out] d_testParam: {'DataList': {0: {'Role': 1}}}
+d_instance_id_list: {257: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': ''}, 258: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT2', 'Ipaddr': ''}}
+PASSED
+class/test_SND_CTRL.py::test_SND_Set_InitWLAN_Command_3 
+Test Objective: Number of DataList !=number of src_id list
+[In] i_src_id: 0x101
+[In] d_testParam: {'NumOfIf': 2, 'DataList': {0: {'Role': 1}, 1: {'Role': 2}}}
+[In] cls_log: 
+d_instance_id_list: {257: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': ''}, 258: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT2', 'Ipaddr': ''}}
+[Logger] debug: [call('s_com_port : /dev/ttyUSB0'),
+ call('s_host : '),
+ call('i_port : '),
+ call('d_connect_info:/dev/ttyUSB0'),
+ call('Con_info equal !!! [/dev/ttyUSB0]'),
+ call('src_id list : [258]')]
+[Logger] error: [call('Number of DataList !=number of src_id list [DataList:2 src_id list1')]
+[Logger] info: []
+[Out] i_ret: -3
+[Out] d_testParam: {'NumOfIf': 2, 'DataList': {0: {'Role': 1}, 1: {'Role': 2}}}
+d_instance_id_list: {257: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': ''}, 258: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT2', 'Ipaddr': ''}}
+PASSED
+class/test_SND_CTRL.py::test_SND_Set_InitWLAN_Command_4 
+Test Objective: Normal port and host
+[In] i_src_id: 0x101
+[In] d_testParam: {'NumOfIf': 1, 'DataList': {0: {'Role': 1}}}
+[In] cls_log: 
+d_instance_id_list: {257: {'Con_info': ('192.168.0.20', 5010), 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': ''}, 258: {'Con_info': ('192.168.0.20', 5010), 'Dst_id': 2561, 'Device_info': 'DUT2', 'Ipaddr': ''}}
+[Logger] debug: [call('s_com_port : '),
+ call('s_host : 192.168.0.20'),
+ call('i_port : 5010'),
+ call("d_connect_info:('192.168.0.20', 5010)"),
+ call("Con_info equal !!! [('192.168.0.20', 5010)]"),
+ call('src_id list : [258]'),
+ call("d_testParam : {'NumOfIf': 1, 'DataList': {0: {'Role': 1, 'SrcId': 258, 'DstId': 2561}}}")]
+[Logger] error: []
+[Logger] info: []
+[Out] i_ret: 0
+[Out] d_testParam: {'NumOfIf': 1, 'DataList': {0: {'Role': 1, 'SrcId': 258, 'DstId': 2561}}}
+d_instance_id_list: {257: {'Con_info': ('192.168.0.20', 5010), 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': ''}, 258: {'Con_info': ('192.168.0.20', 5010), 'Dst_id': 2561, 'Device_info': 'DUT2', 'Ipaddr': ''}}
+PASSED
+class/test_SND_CTRL.py::test_SND_Set_InitWLAN_Command_5 
+Test Objective: com_port mismatch
+[In] i_src_id: 0x101
+[In] d_testParam: {'NumOfIf': 1, 'DataList': {0: {'Role': 1}}}
+[In] cls_log: 
+d_instance_id_list: {257: {'Con_info': '/dev/ttyUSB3', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': ''}, 258: {'Con_info': '/dev/ttyUSB3', 'Dst_id': 2561, 'Device_info': 'DUT2', 'Ipaddr': ''}}
+[Logger] debug: [call('s_com_port : /dev/ttyUSB0'),
+ call('s_host : '),
+ call('i_port : '),
+ call('d_connect_info:/dev/ttyUSB0'),
+ call('src_id list : []')]
+[Logger] error: [call('Number of DataList !=number of src_id list [DataList:1 src_id list0')]
+[Logger] info: []
+[Out] i_ret: -3
+[Out] d_testParam: {'NumOfIf': 1, 'DataList': {0: {'Role': 1}}}
+d_instance_id_list: {257: {'Con_info': '/dev/ttyUSB3', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': ''}, 258: {'Con_info': '/dev/ttyUSB3', 'Dst_id': 2561, 'Device_info': 'DUT2', 'Ipaddr': ''}}
+PASSED
+class/test_SND_CTRL.py::test_SND_Set_InitWLAN_Command_6 
+Test Objective: NumOfIf != DataList
+[In] i_src_id: 0x101
+[In] d_testParam: {'NumOfIf': 2, 'DataList': {0: {'Role': 1}}}
+[In] cls_log: 
+d_instance_id_list: {257: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': ''}, 258: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT2', 'Ipaddr': ''}}
+[Logger] debug: [call('s_com_port : /dev/ttyUSB0'), call('s_host : '), call('i_port : ')]
+[Logger] error: [call("DataList num is unmatch !! 2{0: {'Role': 1}}"),
+ call('InitWLAN : NumOfIf is none !!')]
+[Logger] info: []
+[Out] i_ret: -3
+[Out] d_testParam: {'NumOfIf': 2, 'DataList': {0: {'Role': 1}}}
+d_instance_id_list: {257: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': ''}, 258: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT2', 'Ipaddr': ''}}
+PASSED
+class/test_SND_CTRL.py::test_SND_Set_InitWLAN_Command_7 
+Test Objective: Not DataList
+[In] i_src_id: 0x101
+[In] d_testParam: {'NumOfIf': 2}
+[In] cls_log: 
+d_instance_id_list: {257: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': ''}, 258: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT2', 'Ipaddr': ''}}
+[Logger] debug: [call('s_com_port : /dev/ttyUSB0'), call('s_host : '), call('i_port : ')]
+[Logger] error: [call('DataList is none !!')]
+[Logger] info: []
+[Out] i_ret: -3
+[Out] d_testParam: {'NumOfIf': 2}
+d_instance_id_list: {257: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': ''}, 258: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT2', 'Ipaddr': ''}}
+PASSED
+class/test_SND_CTRL.py::test_SND_Set_InitWLAN_Command_8 
+Test Objective: self.i_src_id == i_src_key
+[In] i_src_id: 0x101
+[In] d_testParam: {'NumOfIf': 1, 'DataList': {0: {'Role': 1}}}
+[In] cls_log: 
+d_instance_id_list: {257: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': ''}}
+[Logger] debug: [call('s_com_port : /dev/ttyUSB0'),
+ call('s_host : '),
+ call('i_port : '),
+ call('d_connect_info:/dev/ttyUSB0'),
+ call('src_id list : []')]
+[Logger] error: [call('Number of DataList !=number of src_id list [DataList:1 src_id list0')]
+[Logger] info: []
+[Out] i_ret: -3
+[Out] d_testParam: {'NumOfIf': 1, 'DataList': {0: {'Role': 1}}}
+d_instance_id_list: {257: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2561, 'Device_info': 'DUT1', 'Ipaddr': ''}}
+PASSED
+class/test_SND_CTRL.py::test_SND_Check_ConnectAp_1 
+Test Objective: Normal
+[In] d_testCriteria: {'AbnormalTest': 1, 'ExpectResult': 0}
+[In] d_rply_tlv: {'Result': 0}
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: [call('match result')]
+[Out] i_ret: 0
+PASSED
+class/test_SND_CTRL.py::test_SND_Check_ConnectAp_2 
+Test Objective: unmatch result
+[In] d_testCriteria: {'AbnormalTest': 1, 'ExpectResult': 0}
+[In] d_rply_tlv: {'Result': -3}
+[Logger] debug: []
+[Logger] error: [call('unmatch result -3 : 1')]
+[Logger] info: []
+[Out] i_ret: -3
+PASSED
+class/test_SND_CTRL.py::test_SND_Check_ConnectAp_3 
+Test Objective: AbnormalTest none
+[In] d_testCriteria: {'ExpectResult': 0}
+[In] d_rply_tlv: {'Result': 0}
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: []
+[Out] i_ret: 0
+PASSED
+class/test_SND_CTRL.py::test_SND_Check_Apchannel_1 
+Test Objective: Normal
+[In] d_testCriteria: {'ExpectChannel': 1}
+[In] d_rply_tlv: {'Channel': 1}
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: [call('match channel')]
+[Out] i_ret: 0
+PASSED
+class/test_SND_CTRL.py::test_SND_Check_Apchannel_2 
+Test Objective: unmatch channel
+[In] d_testCriteria: {'ExpectChannel': 1}
+[In] d_rply_tlv: {'Channel': 2}
+[Logger] debug: []
+[Logger] error: [call('unmatch channel')]
+[Logger] info: []
+[Out] i_ret: -3
+PASSED
+class/test_SND_CTRL.py::test_SND_Check_Apchannel_3 
+Test Objective: Channel None
+[In] d_testCriteria: {'ExpectChannel': 1}
+[In] d_rply_tlv: {}
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: []
+[Out] i_ret: 0
+PASSED
+class/test_SND_CTRL.py::test_SND_Check_Apchannel_4 
+Test Objective: ExpectChannel None
+[In] d_testCriteria: {}
+[In] d_rply_tlv: {'Channel': 1}
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: []
+[Out] i_ret: 0
+PASSED
+class/test_SND_CTRL.py::test_SND_Wait_Event_Command_1 
+Test Objective: Normal
+[In] d_testParam: {'EventNum': 0}
+[In] que_dev: <queue.Queue object at 0x032527B0>
+[Logger] debug: [call('wait event loop end')]
+[Logger] error: []
+[Logger] info: [call('wait event : 0'), call('event : 0')]
+[Out] i_ret: -14
+PASSED
+class/test_SND_CTRL.py::test_SND_Wait_Event_Command_2 
+Test Objective: Event Timeout
+[In] d_testParam: {'EventNum': 1}
+[In] que_dev: <queue.Queue object at 0x0324D1D0>
+[Logger] debug: [call('wait event loop end')]
+[Logger] error: []
+[Logger] info: [call('wait event : 1')]
+[Out] i_ret: -10
+PASSED
+class/test_SND_CTRL.py::test_SND_Run_Wait_Command_1 
+Test Objective: Normal TimeSec
+[In] d_testParam: {'TimeSec': 5}
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: [call('wait sec : 5')]
+[Out] i_ret: -14
+PASSED
+class/test_SND_CTRL.py::test_SND_Run_Wait_Command_2 
+Test Objective: Normal TimeMsec
+[In] d_testParam: {'TimeMsec': 5}
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: [call('wait sec : 0.005')]
+[Out] i_ret: -14
+PASSED
+class/test_SND_CTRL.py::test_SND_Run_Wait_Command_3 
+Test none Timesec and TimeMsec
+[In] d_testParam: {'Time': 5}
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: []
+[Out] i_ret: -3
+PASSED
+class/test_SND_CTRL.py::test_SND_Run_Continue_Command_1 
+Test Objective: Normal
+i_continue_ena: 0
+i_continue_count: 0
+i_continue_max_count: 0
+[In] d_testParam: {'ContinueTimes': 5, 'ContinueOrder': 2}
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: [call('start Continue pattern : times (5) order (2)')]
+[Out] i_ret: -15
+PASSED
+class/test_SND_CTRL.py::test_SND_Run_Continue_Command_2 
+Test Objective: 2call
+i_continue_ena: 0
+i_continue_count: 0
+i_continue_max_count: 0
+[In] d_testParam: {'ContinueTimes': 5, 'ContinueOrder': 2}
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: [call('start Continue pattern : times (5) order (2)')]
+[Out] i_ret: -15
+i_continue_ena: 1
+i_continue_count: 0
+i_continue_max_count: 5
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: [call('start Continue pattern : times (5) order (2)'), call('repeat count (1)')]
+[Out] i_ret: -15
+PASSED
+class/test_SND_CTRL.py::test_SND_Run_Continue_Command_3 
+Test Objective: i_continue_count > i_continue_max_count
+i_continue_ena: 1
+i_continue_count: 1
+i_continue_max_count: 0
+[In] d_testParam: {'ContinueTimes': 5, 'ContinueOrder': 2}
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: []
+[Out] i_ret: -14
+PASSED
+class/test_SND_CTRL.py::test_SND_Run_Continue_Command_4 
+Test Objective: i_continue_count = i_continue_max_count
+i_continue_ena: 1
+i_continue_count: 1
+i_continue_max_count: 1
+[In] d_testParam: {'ContinueTimes': 5, 'ContinueOrder': 2}
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: []
+[Out] i_ret: -14
+PASSED
+class/test_SND_CTRL.py::test_SND_Run_Continue_Command_5 
+Test Objective: i_continue_count < i_continue_max_count
+i_continue_ena: 1
+i_continue_count: 1
+i_continue_max_count: 2
+[In] d_testParam: {'ContinueTimes': 5, 'ContinueOrder': 2}
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: [call('repeat count (2)')]
+[Out] i_ret: -15
+PASSED
+class/test_SND_CTRL.py::test_SND_Run_Continue_Command_6 
+Test Objective: ContinueTimes none
+i_continue_ena: 0
+i_continue_count: 0
+i_continue_max_count: 0
+[In] d_testParam: {'ContinueOrder': 2}
+[Logger] debug: []
+[Logger] error: [call('Continue parameter error !!')]
+[Logger] info: []
+[Out] i_ret: -3
+PASSED
+class/test_SND_CTRL.py::test_SND_Run_Continue_Command_7 
+Test Objective: ContinueOrder none
+i_continue_ena: 0
+i_continue_count: 0
+i_continue_max_count: 0
+[In] d_testParam: {'ContinueTimes': 2}
+[Logger] debug: []
+[Logger] error: [call('Continue parameter error !!')]
+[Logger] info: []
+[Out] i_ret: -3
+PASSED
+class/test_SND_CTRL.py::test_SND_Set_InstanceID_List_1 
+Test Objective: Normal
+[In] d_connect_info: /dev/ttyUSB0
+[In] s_testParam: DUT
+d_instance_id_list: {}
+[Logger] debug: [call("d_con_inf:{'Con_info': '/dev/ttyUSB0', 'Dst_id': 2304, 'Device_info': 'DUT', 'Ipaddr': ''}"),
+ call("d_instance_id_list : {257: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2304, 'Device_info': 'DUT', 'Ipaddr': ''}}")]
+[Logger] error: []
+[Logger] info: []
+d_instance_id_list: {257: {'Con_info': '/dev/ttyUSB0', 'Dst_id': 2304, 'Device_info': 'DUT', 'Ipaddr': ''}}
+PASSED
+class/test_SND_CTRL.py::test_SND_Set_InstanceID_List_2 
+Test Objective: host and port
+[In] d_connect_info: ('192.168.0.20', 5010)
+[In] s_testParam: DUT
+d_instance_id_list: {}
+[Logger] debug: [call("d_con_inf:{'Con_info': ('192.168.0.20', 5010), 'Dst_id': 2304, 'Device_info': 'DUT', 'Ipaddr': ''}"),
+ call("d_instance_id_list : {257: {'Con_info': ('192.168.0.20', 5010), 'Dst_id': 2304, 'Device_info': 'DUT', 'Ipaddr': ''}}")]
+[Logger] error: []
+[Logger] info: []
+d_instance_id_list: {257: {'Con_info': ('192.168.0.20', 5010), 'Dst_id': 2304, 'Device_info': 'DUT', 'Ipaddr': ''}}
+PASSED
+class/test_SND_CTRL.py::test_SND_Update_Test_Info_1 
+Test Objective: SND_Check_ConnectAp function call
+[In] i_retry_cnt: 0
+[In] s_cmd: ConnectAp
+[In] d_testCriteria: {}
+[In] d_rply_tlv: {}
+[In] cls_log: 0
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: [call('cmd : ConnectAp tlv : {}')]
+[Call count] SND_Check_ConnectAp: 1
+[Call count] SND_Check_Apchannel: 0
+[Call count] SND_Update_InstanceID: 0
+[Call count] SND_Initialize_InstanceID: 0
+[Call count] SND_Check_IpAddress: 0
+[Call count] SND_Update_IpAddress: 0
+[Call count] SND_Delete_IpAddress: 0
+PASSED
+class/test_SND_CTRL.py::test_SND_Update_Test_Info_2 
+Test Objective: SND_Check_Apchannel function call
+[In] i_retry_cnt: 0
+[In] s_cmd: GetApInfo
+[In] d_testCriteria: {}
+[In] d_rply_tlv: {}
+[In] cls_log: 0
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: [call('cmd : GetApInfo tlv : {}')]
+[Call count] SND_Check_ConnectAp: 0
+[Call count] SND_Check_Apchannel: 1
+[Call count] SND_Update_InstanceID: 0
+[Call count] SND_Initialize_InstanceID: 0
+[Call count] SND_Check_IpAddress: 0
+[Call count] SND_Update_IpAddress: 0
+[Call count] SND_Delete_IpAddress: 0
+PASSED
+class/test_SND_CTRL.py::test_SND_Update_Test_Info_3 
+Test Objective: SND_Update_InstanceID function call
+[In] i_retry_cnt: 0
+[In] s_cmd: InitWLAN
+[In] d_testCriteria: {}
+[In] d_rply_tlv: {}
+[In] cls_log: 0
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: [call('cmd : InitWLAN tlv : {}')]
+[Call count] SND_Check_ConnectAp: 0
+[Call count] SND_Check_Apchannel: 0
+[Call count] SND_Update_InstanceID: 1
+[Call count] SND_Initialize_InstanceID: 0
+[Call count] SND_Check_IpAddress: 0
+[Call count] SND_Update_IpAddress: 0
+[Call count] SND_Delete_IpAddress: 0
+PASSED
+class/test_SND_CTRL.py::test_SND_Update_Test_Info_4 
+Test Objective: SND_Initialize_InstanceID function call
+[In] i_retry_cnt: 0
+[In] s_cmd: TerminateWLAN
+[In] d_testCriteria: {}
+[In] d_rply_tlv: {}
+[In] cls_log: 0
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: [call('cmd : TerminateWLAN tlv : {}')]
+[Call count] SND_Check_ConnectAp: 0
+[Call count] SND_Check_Apchannel: 0
+[Call count] SND_Update_InstanceID: 0
+[Call count] SND_Initialize_InstanceID: 1
+[Call count] SND_Check_IpAddress: 0
+[Call count] SND_Update_IpAddress: 0
+[Call count] SND_Delete_IpAddress: 0
+PASSED
+class/test_SND_CTRL.py::test_SND_Update_Test_Info_5 
+Test Objective: SND_Check_IpAddress function call
+[In] i_retry_cnt: 0
+[In] s_cmd: SetIpInfo
+[In] d_testCriteria: {}
+[In] d_rply_tlv: {'IpAddress': '192.168.0.10'}
+[In] cls_log: 0
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: [call("cmd : SetIpInfo tlv : {'IpAddress': '192.168.0.10'}")]
+[Call count] SND_Check_ConnectAp: 0
+[Call count] SND_Check_Apchannel: 0
+[Call count] SND_Update_InstanceID: 0
+[Call count] SND_Initialize_InstanceID: 0
+[Call count] SND_Check_IpAddress: 1
+[Call count] SND_Update_IpAddress: 0
+[Call count] SND_Delete_IpAddress: 0
+PASSED
+class/test_SND_CTRL.py::test_SND_Update_Test_Info_6 
+Test Objective: SND_Update_IpAddress function call(getipinfo)
+[In] i_retry_cnt: 0
+[In] s_cmd: GetIpInfo
+[In] d_testCriteria: {}
+[In] d_rply_tlv: {'IpAddress': '192.168.0.10'}
+[In] cls_log: 0
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: [call("cmd : GetIpInfo tlv : {'IpAddress': '192.168.0.10'}")]
+[Call count] SND_Check_ConnectAp: 0
+[Call count] SND_Check_Apchannel: 0
+[Call count] SND_Update_InstanceID: 0
+[Call count] SND_Initialize_InstanceID: 0
+[Call count] SND_Check_IpAddress: 0
+[Call count] SND_Update_IpAddress: 1
+[Call count] SND_Delete_IpAddress: 0
+PASSED
+class/test_SND_CTRL.py::test_SND_Update_Test_Info_7 
+Test Objective: SND_Update_IpAddress function call(startdhcpc)
+[In] i_retry_cnt: 0
+[In] s_cmd: StartDhcpc
+[In] d_testCriteria: {}
+[In] d_rply_tlv: {'IpAddress': '192.168.0.10'}
+[In] cls_log: 0
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: [call("cmd : StartDhcpc tlv : {'IpAddress': '192.168.0.10'}")]
+[Call count] SND_Check_ConnectAp: 0
+[Call count] SND_Check_Apchannel: 0
+[Call count] SND_Update_InstanceID: 0
+[Call count] SND_Initialize_InstanceID: 0
+[Call count] SND_Check_IpAddress: 0
+[Call count] SND_Update_IpAddress: 1
+[Call count] SND_Delete_IpAddress: 0
+PASSED
+class/test_SND_CTRL.py::test_SND_Update_Test_Info_8 
+Test Objective: SND_Delete_IpAddress function call
+[In] i_retry_cnt: 0
+[In] s_cmd: DisconnectAp
+[In] d_testCriteria: {}
+[In] d_rply_tlv: {}
+[In] cls_log: 0
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: [call('cmd : DisconnectAp tlv : {}')]
+[Call count] SND_Check_ConnectAp: 0
+[Call count] SND_Check_Apchannel: 0
+[Call count] SND_Update_InstanceID: 0
+[Call count] SND_Initialize_InstanceID: 0
+[Call count] SND_Check_IpAddress: 0
+[Call count] SND_Update_IpAddress: 0
+[Call count] SND_Delete_IpAddress: 1
+PASSED
+class/test_SND_CTRL.py::test_SND_Update_Test_Info_9 
+Test Objective: No function call
+[In] i_retry_cnt: 0
+[In] s_cmd: StartIperf
+[In] d_testCriteria: {}
+[In] d_rply_tlv: {}
+[In] cls_log: 0
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: [call('cmd : StartIperf tlv : {}')]
+[Call count] SND_Check_ConnectAp: 0
+[Call count] SND_Check_Apchannel: 0
+[Call count] SND_Update_InstanceID: 0
+[Call count] SND_Initialize_InstanceID: 0
+[Call count] SND_Check_IpAddress: 0
+[Call count] SND_Update_IpAddress: 0
+[Call count] SND_Delete_IpAddress: 0
+PASSED
+class/test_SND_CTRL.py::test_SND_Prepare_Test_Param_1 
+Test Objective: SND_Set_InitWLAN_Command function call
+[In] i_src_id: 257
+[In] s_cmd: InitWLAN
+[In] d_testParam: {}
+[In] que_dev: 
+[In] cls_log: 
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: []
+[Call count] SND_Set_InitWLAN_Command: 1
+[Call count] SND_Set_Time_Command: 0
+[Call count] SND_Wait_Event_Command: 0
+[Call count] SND_Run_Wait_Command: 0
+[Call count] SND_Run_Continue_Command: 0
+[Call count] SND_Set_Dhcpd_Command: 0
+[Call count] SND_Set_Ping_Command: 0
+[Call count] SND_Set_Iperf_Command: 0
+PASSED
+class/test_SND_CTRL.py::test_SND_Prepare_Test_Param_2 
+Test Objective: SND_Set_Time_Command function call
+[In] i_src_id: 257
+[In] s_cmd: SetCurrentTime
+[In] d_testParam: {}
+[In] que_dev: 
+[In] cls_log: 
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: []
+[Call count] SND_Set_InitWLAN_Command: 0
+[Call count] SND_Set_Time_Command: 1
+[Call count] SND_Wait_Event_Command: 0
+[Call count] SND_Run_Wait_Command: 0
+[Call count] SND_Run_Continue_Command: 0
+[Call count] SND_Set_Dhcpd_Command: 0
+[Call count] SND_Set_Ping_Command: 0
+[Call count] SND_Set_Iperf_Command: 0
+PASSED
+class/test_SND_CTRL.py::test_SND_Prepare_Test_Param_3 
+Test Objective: SND_Wait_Event_Command function call
+[In] i_src_id: 257
+[In] s_cmd: Event
+[In] d_testParam: {}
+[In] que_dev: 
+[In] cls_log: 
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: []
+[Call count] SND_Set_InitWLAN_Command: 0
+[Call count] SND_Set_Time_Command: 0
+[Call count] SND_Wait_Event_Command: 1
+[Call count] SND_Run_Wait_Command: 0
+[Call count] SND_Run_Continue_Command: 0
+[Call count] SND_Set_Dhcpd_Command: 0
+[Call count] SND_Set_Ping_Command: 0
+[Call count] SND_Set_Iperf_Command: 0
+PASSED
+class/test_SND_CTRL.py::test_SND_Prepare_Test_Param_4 
+Test Objective: SND_Run_Wait_Command function call
+[In] i_src_id: 257
+[In] s_cmd: Wait
+[In] d_testParam: {}
+[In] que_dev: 
+[In] cls_log: 
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: []
+[Call count] SND_Set_InitWLAN_Command: 0
+[Call count] SND_Set_Time_Command: 0
+[Call count] SND_Wait_Event_Command: 0
+[Call count] SND_Run_Wait_Command: 1
+[Call count] SND_Run_Continue_Command: 0
+[Call count] SND_Set_Dhcpd_Command: 0
+[Call count] SND_Set_Ping_Command: 0
+[Call count] SND_Set_Iperf_Command: 0
+PASSED
+class/test_SND_CTRL.py::test_SND_Prepare_Test_Param_5 
+Test Objective: SND_Run_Continue_Command function call
+[In] i_src_id: 257
+[In] s_cmd: Continue
+[In] d_testParam: {}
+[In] que_dev: 
+[In] cls_log: 
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: []
+[Call count] SND_Set_InitWLAN_Command: 0
+[Call count] SND_Set_Time_Command: 0
+[Call count] SND_Wait_Event_Command: 0
+[Call count] SND_Run_Wait_Command: 0
+[Call count] SND_Run_Continue_Command: 1
+[Call count] SND_Set_Dhcpd_Command: 0
+[Call count] SND_Set_Ping_Command: 0
+[Call count] SND_Set_Iperf_Command: 0
+PASSED
+class/test_SND_CTRL.py::test_SND_Prepare_Test_Param_6 
+Test Objective: SND_Set_Dhcpd_Command function call
+[In] i_src_id: 257
+[In] s_cmd: StartDhcpd
+[In] d_testParam: {}
+[In] que_dev: 
+[In] cls_log: 
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: []
+[Call count] SND_Set_InitWLAN_Command: 0
+[Call count] SND_Set_Time_Command: 0
+[Call count] SND_Wait_Event_Command: 0
+[Call count] SND_Run_Wait_Command: 0
+[Call count] SND_Run_Continue_Command: 0
+[Call count] SND_Set_Dhcpd_Command: 1
+[Call count] SND_Set_Ping_Command: 0
+[Call count] SND_Set_Iperf_Command: 0
+PASSED
+class/test_SND_CTRL.py::test_SND_Prepare_Test_Param_7 
+Test Objective: SND_Set_Ping_Command function call
+[In] i_src_id: 257
+[In] s_cmd: StartPing
+[In] d_testParam: {}
+[In] que_dev: 
+[In] cls_log: 
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: []
+[Call count] SND_Set_InitWLAN_Command: 0
+[Call count] SND_Set_Time_Command: 0
+[Call count] SND_Wait_Event_Command: 0
+[Call count] SND_Run_Wait_Command: 0
+[Call count] SND_Run_Continue_Command: 0
+[Call count] SND_Set_Dhcpd_Command: 0
+[Call count] SND_Set_Ping_Command: 1
+[Call count] SND_Set_Iperf_Command: 0
+PASSED
+class/test_SND_CTRL.py::test_SND_Prepare_Test_Param_8 
+Test Objective: SND_Set_Iperf_Command function call
+[In] i_src_id: 257
+[In] s_cmd: StartIperf
+[In] d_testParam: {}
+[In] que_dev: 
+[In] cls_log: 
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: []
+[Call count] SND_Set_InitWLAN_Command: 0
+[Call count] SND_Set_Time_Command: 0
+[Call count] SND_Wait_Event_Command: 0
+[Call count] SND_Run_Wait_Command: 0
+[Call count] SND_Run_Continue_Command: 0
+[Call count] SND_Set_Dhcpd_Command: 0
+[Call count] SND_Set_Ping_Command: 0
+[Call count] SND_Set_Iperf_Command: 1
+PASSED
+class/test_SND_CTRL.py::test_SND_Prepare_Test_Param_9 
+Test Objective: SND_Set_Time_Command function call Pattern2
+[In] i_src_id: 257
+[In] s_cmd: ConfirmDevStat
+[In] d_testParam: {}
+[In] que_dev: 
+[In] cls_log: 
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: []
+[Call count] SND_Set_InitWLAN_Command: 0
+[Call count] SND_Set_Time_Command: 1
+[Call count] SND_Wait_Event_Command: 0
+[Call count] SND_Run_Wait_Command: 0
+[Call count] SND_Run_Continue_Command: 0
+[Call count] SND_Set_Dhcpd_Command: 0
+[Call count] SND_Set_Ping_Command: 0
+[Call count] SND_Set_Iperf_Command: 0
+PASSED
+class/test_SND_CTRL.py::test_SND_Prepare_Test_Param_10 
+Test Objective: No function call
+[In] i_src_id: 257
+[In] s_cmd: DisconnectAp
+[In] d_testParam: {}
+[In] que_dev: 
+[In] cls_log: 
+[Logger] debug: []
+[Logger] error: []
+[Logger] info: []
+[Call count] SND_Set_InitWLAN_Command: 0
+[Call count] SND_Set_Time_Command: 0
+[Call count] SND_Wait_Event_Command: 0
+[Call count] SND_Run_Wait_Command: 0
+[Call count] SND_Run_Continue_Command: 0
+[Call count] SND_Set_Dhcpd_Command: 0
+[Call count] SND_Set_Ping_Command: 0
+[Call count] SND_Set_Iperf_Command: 0
+PASSED
+
+----------- coverage: platform win32, python 3.6.4-final-0 -----------
+Coverage HTML written to dir htmlcov
+
+
+========================== 77 passed in 9.24 seconds ==========================

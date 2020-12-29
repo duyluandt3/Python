@@ -1,0 +1,477 @@
+{
+    "0": {
+        "Type": "DataList",
+        "Length": 0,
+        "Form": "Int"
+    },
+    "1": {
+        "Type": "Result",
+        "Length": 2,
+        "Form": "Int"
+    },
+    "2": {
+        "Type": "OnOffFlag",
+        "Length": 1,
+        "Form": "Int"
+    },
+    "3": {
+        "Type": "Date",
+        "Length": 4,
+        "Form": "Int"
+    },
+    "4": {
+        "Type": "Time",
+        "Length": 4,
+        "Form": "Int"
+    },
+    "5": {
+        "Type": "Role",
+        "Length": 1,
+        "Form": "Int"
+    },
+    "6": {
+        "Type": "User",
+        "Length": 0,
+        "Form": "Str"
+    },
+    "7": {
+        "Type": "Password",
+        "Length": 0,
+        "Form": "Str"
+    },
+    "8": {
+        "Type": "OffsetTime",
+        "Length": 4,
+        "Form": "Int"
+    },
+    "9": {
+        "Type": "LogData",
+        "Length": 0,
+        "Form": "Str"
+    },
+    "10": {
+        "Type": "Ssid",
+        "Length": 0,
+        "Form": "Str"
+    },
+    "11": {
+        "Type": "MacAddress",
+        "Length": 6,
+        "Form": "Str"
+    },
+    "12": {
+        "Type": "WepKey",
+        "Length": 0,
+        "Form": "Str"
+    },
+    "13": {
+        "Type": "WpaPassphrase",
+        "Length": 0,
+        "Form": "Str"
+    },
+    "14": {
+        "Type": "SaePassword",
+        "Length": 0,
+        "Form": "Str"
+    },
+    "15": {
+        "Type": "Channel",
+        "Length": 2,
+        "Form": "Int"
+    },
+    "16": {
+        "Type": "Bandwidth",
+        "Length": 1,
+        "Form": "Int"
+    },
+    "17": {
+        "Type": "Sideband",
+        "Length": 1,
+        "Form": "Int"
+    },
+    "18": {
+        "Type": "SrcId",
+        "Length": 2,
+        "Form": "Int"
+    },
+    "19": {
+        "Type": "DstId",
+        "Length": 2,
+        "Form": "Int"
+    },
+    "20": {
+        "Type": "LogName",
+        "Length": 0,
+        "Form": "Str"
+    },
+    "21": {
+        "Type": "LogType",
+        "Length": 1,
+        "Form": "Int"
+    },
+    "22": {
+        "Type": "LogLevel",
+        "Length": 1,
+        "Form": "Int"
+    },
+    "23": {
+        "Type": "NumOfIf",
+        "Length": 1,
+        "Form": "Int"
+    },
+    "24": {
+        "Type": "IfType",
+        "Length": 1,
+        "Form": "Int"
+    },
+    "25": {
+        "Type": "Band",
+        "Length": 1,
+        "Form": "Int"
+    },
+    "4097": {
+        "Type": "CountryCode",
+        "Length": 2,
+        "Form": "Str"
+    },
+    "4098": {
+        "Type": "RevisionCode",
+        "Length": 4,
+        "Form": "Int"
+    },
+    "4099": {
+        "Type": "Rssi",
+        "Length": 2,
+        "Form": "Int"
+    },
+    "4100": {
+        "Type": "AuthFlg",
+        "Length": 1,
+        "Form": "Int"
+    },
+    "4101": {
+        "Type": "KeyIdx",
+        "Length": 1,
+        "Form": "Int"
+    },
+    "4102": {
+        "Type": "KeyMgmt",
+        "Length": 1,
+        "Form": "Int"
+    },
+    "4103": {
+        "Type": "WpaType",
+        "Length": 1,
+        "Form": "Int"
+    },
+    "4104": {
+        "Type": "WpaPairwise",
+        "Length": 1,
+        "Form": "Int"
+    },
+    "4105": {
+        "Type": "Pmf",
+        "Length": 1,
+        "Form": "Int"
+    },
+    "4106": {
+        "Type": "PmfSettings",
+        "Length": 1,
+        "Form": "Int"
+    },
+    "4107": {
+        "Type": "PowerSaveMode",
+        "Length": 1,
+        "Form": "Int"
+    },
+    "4108": {
+        "Type": "Rate",
+        "Length": 2,
+        "Form": "Int"
+    },
+    "4109": {
+        "Type": "Rxdfrmucast",
+        "Length": 4,
+        "Form": "Int"
+    },
+    "4110": {
+        "Type": "Rxdfrmocast",
+        "Length": 4,
+        "Form": "Int"
+    },
+    "4111": {
+        "Type": "Rxdfrmmcast",
+        "Length": 4,
+        "Form": "Int"
+    },
+    "4112": {
+        "Type": "ReasonCode",
+        "Length": 4,
+        "Form": "Int"
+    },
+    "4113": {
+        "Type": "SpectType",
+        "Length": 1,
+        "Form": "Int"
+    },
+    "8193": {
+        "Type": "ScanForm",
+        "Length": 1,
+        "Form": "Int"
+    },
+    "8194": {
+        "Type": "NumOfAp",
+        "Length": 1,
+        "Form": "Int"
+    },
+    "8195": {
+        "Type": "SecurityType",
+        "Length": 1,
+        "Form": "Int"
+    },
+    "8196": {
+        "Type": "SecurityString",
+        "Length": 0,
+        "Form": "Str"
+    },
+    "8197": {
+        "Type": "NumOfChannel",
+        "Length": 1,
+        "Form": "Int"
+    },
+    "8198": {
+        "Type": "EventNum",
+        "Length": 2,
+        "Form": "Int"
+    },
+    "8199": {
+        "Type": "Pktengrxducast",
+        "Length": 4,
+        "Form": "Int"
+    },
+    "8200": {
+        "Type": "Pktengrxdmcast",
+        "Length": 4,
+        "Form": "Int"
+    },
+    "8201": {
+        "Type": "ChannelStatus",
+        "Length": 4,
+        "Form": "Int"
+    },
+    "8202": {
+        "Type": "ChannelMinutes",
+        "Length": 1,
+        "Form": "Int"
+    },
+    "8205": {
+        "Type": "VersionString",
+        "Length": 0,
+        "Form": "Str"
+    },
+    "12289": {
+        "Type": "MaxAssoc",
+        "Length": 1,
+        "Form": "Int"
+    },
+    "12290": {
+        "Type": "NumOfSta",
+        "Length": 1,
+        "Form": "Int"
+    },
+    "12291": {
+        "Type": "WlanId",
+        "Length": 1,
+        "Form": "Int"
+    },
+    "12292": {
+        "Type": "Location",
+        "Length": 1,
+        "Form": "Int"
+    },
+    "12293": {
+        "Type": "ProfileName",
+        "Length": 0,
+        "Form": "Str"
+    },
+    "16385": {
+        "Type": "IpAddress",
+        "Length": 4,
+        "Form": "Str"
+    },
+    "16386": {
+        "Type": "NetMask",
+        "Length": 4,
+        "Form": "Str"
+    },
+    "16387": {
+        "Type": "GateWay",
+        "Length": 4,
+        "Form": "Str"
+    },
+    "16388": {
+        "Type": "Interval",
+        "Length": 2,
+        "Form": "Int"
+    },
+    "16389": {
+        "Type": "TotalTime",
+        "Length": 2,
+        "Form": "Int"
+    },
+    "16390": {
+        "Type": "PacketNum",
+        "Length": 2,
+        "Form": "Int"
+    },
+    "16391": {
+        "Type": "PacketSize",
+        "Length": 2,
+        "Form": "Int"
+    },
+    "16392": {
+        "Type": "IperfModeType",
+        "Length": 1,
+        "Form": "Int"
+    },
+    "16393": {
+        "Type": "IperfCmdString",
+        "Length": 0,
+        "Form": "Str"
+    },
+    "16394": {
+        "Type": "AssignNum",
+        "Length": 2,
+        "Form": "Int"
+    },
+    "16395": {
+        "Type": "LeaseTime",
+        "Length": 4,
+        "Form": "Int"
+    },
+    "20481": {
+        "Type": "CaptureFileName",
+        "Length": 0,
+        "Form": "Str"
+    },
+    "20482": {
+        "Type": "ControlFreq",
+        "Length": 2,
+        "Form": "Int"
+    },
+    "20483": {
+        "Type": "CenterFreq",
+        "Length": 2,
+        "Form": "Int"
+    },
+    "20484": {
+        "Type": "AnalyzeMsg",
+        "Length": 2,
+        "Form": "Int"
+    },
+    "20485": {
+        "Type": "CaptureStartTime",
+        "Length": 4,
+        "Form": "Int"
+    },
+    "20486": {
+        "Type": "CaptureEndTime",
+        "Length": 4,
+        "Form": "Int"
+    },
+    "20487": {
+        "Type": "NumOfMsg",
+        "Length": 2,
+        "Form": "Int"
+    },
+    "20488": {
+        "Type": "TimeList",
+        "Length": 0,
+        "Form": "Str"
+    },
+    "20489": {
+        "Type": "RadioTapList",
+        "Length": 0,
+        "Form": "Str"
+    },
+    "20490": {
+        "Type": "IeList",
+        "Length": 0,
+        "Form": "Str"
+    },
+    "20491": {
+        "Type": "DestAddr",
+        "Length": 6,
+        "Form": "Str"
+    },
+    "20492": {
+        "Type": "TransAddr",
+        "Length": 6,
+        "Form": "Str"
+    },
+    "20493": {
+        "Type": "SourceAddr",
+        "Length": 6,
+        "Form": "Str"
+    },
+    "20494": {
+        "Type": "NumOfLink",
+        "Length": 1,
+        "Form": "Int"
+    },
+    "20495": {
+        "Type": "AircapIfId",
+        "Length": 1,
+        "Form": "Int"
+    },
+    "20496": {
+        "Type": "TriggerMsg",
+        "Length": 2,
+        "Form": "Int"
+    },
+    "20497": {
+        "Type": "Direction",
+        "Length": 1,
+        "Form": "Int"
+    },
+    "20498": {
+        "Type": "ReferenceData",
+        "Length": 0,
+        "Form": "Str"
+    },
+    "20499": {
+        "Type": "NumOfPkt",
+        "Length": 2,
+        "Form": "Int"
+    },
+    "20500": {
+        "Type": "ChkResult",
+        "Length": 1,
+        "Form": "Int"
+    },
+    "20501": {
+        "Type": "NgReason",
+        "Length": 1,
+        "Form": "Int"
+    },
+    "20502": {
+        "Type": "NgIeName",
+        "Length": 0,
+        "Form": "Str"
+    },
+    "20503": {
+        "Type": "NgIeValueLen",
+        "Length": 2,
+        "Form": "Int"
+    },
+    "20504": {
+        "Type": "NgIeValue",
+        "Length": 0,
+        "Form": "Str"
+    },
+    "20505": {
+        "Type": "NumOfNg",
+        "Length": 2,
+        "Form": "Int"
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "GetStateAIRCAP": {
+        "CmdId": 2,
+        "Action": 1,
+        "MaxRetryCount": 3,
+        "WaitRspTime": 60
+    },
+    "SetCurrentTime": {
+        "CmdId": 3,
+        "Action": 17,
+        "Date": 0,
+        "Time": 0,
+        "MaxRetryCount": 3,
+        "WaitRspTime": 30
+    },
+    "Request_initialization_to": {
+        "CmdId": 4,
+        "Action": 17,
+        "LogName": "",
+        "MaxRetryCount": 3,
+        "WaitRspTime": 30
+    },
+    "Request_termination_to": {
+        "CmdId": 6,
+        "Action": 17,
+        "MaxRetryCount": 3,
+        "WaitRspTime": 30
+    },
+    "Request_packet_capture_start_to": {
+        "CmdId": 96,
+        "Action": 17,
+        "CaptureFileName": "",
+        "Channel": 0,
+        "Bandwidth": 0,
+        "MaxRetryCount": 3,
+        "WaitRspTime": 30
+    },
+    "Request_packet_capture_stop_to": {
+        "CmdId": 97,
+        "Action": 17,
+        "MaxRetryCount": 3,
+        "WaitRspTime": 30
+    },
+    "Request_packet_decrypt_to": {
+        "CmdId": 98,
+        "Action": 17,
+        "MaxRetryCount": 3,
+        "WaitRspTime": 60
+    },
+    "Request_packet_check_to": {
+        "CmdId": 99,
+        "Action": 17,
+        "MaxRetryCount": 3,
+        "WaitRspTime": 60
+    },
+    "Get_packet_capture_from": {
+        "CmdId": 100,
+        "Action": 17,
+        "MaxRetryCount": 3,
+        "WaitRspTime": 60
+    },
+    "Request_packet_search_to": {
+        "CmdId": 101,
+        "Action": 17,
+        "MaxRetryCount": 3,
+        "WaitRspTime": 60
+    },
+    "Request_test_ready": {
+        "CmdId": 153,
+        "Action": 17,
+        "Date": 0,
+        "Time": 0,
+        "MaxRetryCount": 3,
+        "WaitRspTime": 30
+    }
+}

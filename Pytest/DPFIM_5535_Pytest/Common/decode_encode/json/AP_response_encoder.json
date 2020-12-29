@@ -1,0 +1,744 @@
+[
+    {
+        "0": {}
+    },
+    {
+        "1": {}
+    },
+    {
+        "2": {
+            "SET": {
+                "Name": "",
+                "Mandatory": []
+            },
+            "GET": {
+                "Name": "GetStateAP",
+                "Mandatory": [
+                    "Result",
+                    "DeviceStatus"
+                ]
+            }
+        }
+    },
+    {
+        "3": {
+            "SET": {
+                "Name": "SetCurrentTime",
+                "Mandatory": [
+                    "Result"
+                ]
+            },
+            "GET": {
+                "Name": "",
+                "Mandatory": []
+            }
+        }
+    },
+    {
+        "4": {
+            "SET": {
+                "Name": "Request_initialization_to",
+                "Mandatory": [
+                    "Result"
+                ]
+            },
+            "GET": {
+                "Name": "",
+                "Mandatory": []
+            }
+        }
+    },
+    {
+        "5": {}
+    },
+    {
+        "6": {
+            "SET": {
+                "Name": "Request_termination_to",
+                "Mandatory": [
+                    "Result"
+                ]
+            },
+            "GET": {
+                "Name": "",
+                "Mandatory": []
+            }
+        }
+    },
+    {
+        "7": {
+            "SET": {
+                "Name": "Set_country_code_to",
+                "Mandatory": [
+                    "Result"
+                ]
+            },
+            "GET": {
+                "Name": "Get_country_code_from",
+                "Mandatory": [
+                    "Result",
+                    "CountryCode"
+                ]
+            }
+        }
+    },
+    {
+        "8": {
+            "SET": {
+                "Name": "",
+                "Mandatory": []
+            },
+            "GET": {
+                "Name": "Get_rssi_from",
+                "Mandatory": [
+                    "Result",
+                    "Rssi"
+                ]
+            }
+        }
+    },
+    {
+        "9": {
+            "SET": {
+                "Name": "",
+                "Mandatory": []
+            },
+            "GET": {
+                "Name": "Get_macaddr_from",
+                "Mandatory": [
+                    "Result",
+                    "MacAddress"
+                ]
+            }
+        }
+    },
+    {
+        "10": {
+            "SET": {
+                "Name": "Set_ip_to",
+                "Mandatory": [
+                    "Result"
+                ]
+            },
+            "GET": {
+                "Name": "Get_ip_from",
+                "Mandatory": [
+                    "Result",
+                    "IpAddress",
+                    "NetMask",
+                    "GateWay"
+                ]
+            }
+        }
+    },
+    {
+        "11": {
+            "SET": {
+                "Name": "Request_ping_to",
+                "Mandatory": [
+                    "Result"
+                ]
+            },
+            "GET": {
+                "Name": "",
+                "Mandatory": []
+            }
+        }
+    },
+    {
+        "12": {
+            "SET": {
+                "Name": "Request_iperf_to",
+                "Mandatory": [
+                    "Result"
+                ]
+            },
+            "GET": {
+                "Name": "",
+                "Mandatory": []
+            }
+        }
+    },
+    {
+        "13": {
+            "SET": {
+                "Name": "Request_iperf_server_stop_to",
+                "Mandatory": [
+                    "Result",
+                    "IperfCmdString"
+                ]
+            },
+            "GET": {
+                "Name": "",
+                "Mandatory": []
+            }
+        }
+    },
+    {
+        "14": {
+            "SET": {
+                "Name": "Set_ip_by_dhcp_to",
+                "Mandatory": [
+                    "Result",
+                    "IpAddress",
+                    "NetMask",
+                    "GateWay"
+                ]
+            },
+            "GET": {
+                "Name": "",
+                "Mandatory": []
+            }
+        }
+    },
+    {
+        "15": {
+            "SET": {
+                "Name": "Request_dhcp_server_to",
+                "Mandatory": [
+                    "Result"
+                ]
+            },
+            "GET": {
+                "Name": "",
+                "Mandatory": []
+            }
+        }
+    },
+    {
+        "16": {
+            "SET": {
+                "Name": "Set_channel_info_to",
+                "Mandatory": [
+                    "Result"
+                ]
+            },
+            "GET": {
+                "Name": "",
+                "Mandatory": []
+            }
+        }
+    },
+    {
+        "17": {}
+    },
+    {
+        "18": {}
+    },
+    {
+        "19": {}
+    },
+    {
+        "20": {}
+    },
+    {
+        "21": {}
+    },
+    {
+        "22": {}
+    },
+    {
+        "23": {}
+    },
+    {
+        "24": {}
+    },
+    {
+        "25": {}
+    },
+    {
+        "26": {}
+    },
+    {
+        "27": {}
+    },
+    {
+        "28": {
+            "SET": {
+                "Name": "Set_11n_mode_to",
+                "Mandatory": [
+                    "Result"
+                ]
+            },
+            "GET": {
+                "Name": "",
+                "Mandatory": []
+            }
+        }
+    },
+    {
+        "29": {}
+    },
+    {
+        "30": {}
+    },
+    {
+        "31": {}
+    },
+    {
+        "32": {}
+    },
+    {
+        "33": {}
+    },
+    {
+        "34": {}
+    },
+    {
+        "35": {}
+    },
+    {
+        "36": {}
+    },
+    {
+        "37": {}
+    },
+    {
+        "38": {}
+    },
+    {
+        "39": {}
+    },
+    {
+        "40": {}
+    },
+    {
+        "41": {}
+    },
+    {
+        "42": {}
+    },
+    {
+        "43": {}
+    },
+    {
+        "44": {}
+    },
+    {
+        "45": {}
+    },
+    {
+        "46": {}
+    },
+    {
+        "47": {}
+    },
+    {
+        "48": {}
+    },
+    {
+        "49": {}
+    },
+    {
+        "50": {}
+    },
+    {
+        "51": {}
+    },
+    {
+        "52": {}
+    },
+    {
+        "53": {}
+    },
+    {
+        "54": {}
+    },
+    {
+        "55": {}
+    },
+    {
+        "56": {}
+    },
+    {
+        "57": {}
+    },
+    {
+        "58": {}
+    },
+    {
+        "59": {}
+    },
+    {
+        "60": {}
+    },
+    {
+        "61": {}
+    },
+    {
+        "62": {}
+    },
+    {
+        "63": {}
+    },
+    {
+        "64": {
+            "SET": {
+                "Name": "Set_ssid_to",
+                "Mandatory": [
+                    "Result"
+                ]
+            },
+            "GET": {
+                "Name": "",
+                "Mandatory": []
+            }
+        }
+    },
+    {
+        "65": {
+            "SET": {
+                "Name": "Set_security_to",
+                "Mandatory": [
+                    "Result"
+                ]
+            },
+            "GET": {
+                "Name": "",
+                "Mandatory": []
+            }
+        }
+    },
+    {
+        "66": {}
+    },
+    {
+        "67": {}
+    },
+    {
+        "68": {}
+    },
+    {
+        "69": {
+            "SET": {
+                "Name": "Set_hidden_ssid_to",
+                "Mandatory": [
+                    "Result"
+                ]
+            },
+            "GET": {
+                "Name": "",
+                "Mandatory": []
+            }
+        }
+    },
+    {
+        "70": {
+            "SET": {
+                "Name": "Request_radio_out_to",
+                "Mandatory": [
+                    "Result"
+                ]
+            },
+            "GET": {
+                "Name": "",
+                "Mandatory": []
+            }
+        }
+    },
+    {
+        "71": {
+            "SET": {
+                "Name": "",
+                "Mandatory": []
+            },
+            "GET": {
+                "Name": "Get_macaddr_list_from",
+                "Mandatory": [
+                    "Result",
+                    "NumOfSta"
+                ]
+            }
+        }
+    },
+    {
+        "72": {
+            "SET": {
+                "Name": "Set_max_connections_to",
+                "Mandatory": [
+                    "Result"
+                ]
+            },
+            "GET": {
+                "Name": "",
+                "Mandatory": []
+            }
+        }
+    },
+    {
+        "73": {}
+    },
+    {
+        "74": {}
+    },
+    {
+        "75": {}
+    },
+    {
+        "76": {}
+    },
+    {
+        "77": {}
+    },
+    {
+        "78": {}
+    },
+    {
+        "79": {}
+    },
+    {
+        "80": {}
+    },
+    {
+        "81": {}
+    },
+    {
+        "82": {}
+    },
+    {
+        "83": {}
+    },
+    {
+        "84": {}
+    },
+    {
+        "85": {}
+    },
+    {
+        "86": {}
+    },
+    {
+        "87": {}
+    },
+    {
+        "88": {}
+    },
+    {
+        "89": {}
+    },
+    {
+        "90": {}
+    },
+    {
+        "91": {}
+    },
+    {
+        "92": {}
+    },
+    {
+        "93": {}
+    },
+    {
+        "94": {}
+    },
+    {
+        "95": {}
+    },
+    {
+        "96": {}
+    },
+    {
+        "97": {}
+    },
+    {
+        "98": {}
+    },
+    {
+        "99": {}
+    },
+    {
+        "100": {}
+    },
+    {
+        "101": {}
+    },
+    {
+        "102": {}
+    },
+    {
+        "103": {}
+    },
+    {
+        "104": {}
+    },
+    {
+        "105": {}
+    },
+    {
+        "106": {}
+    },
+    {
+        "107": {}
+    },
+    {
+        "108": {}
+    },
+    {
+        "109": {}
+    },
+    {
+        "110": {}
+    },
+    {
+        "111": {}
+    },
+    {
+        "112": {
+            "SET": {
+                "Name": "NotifyCaptureLog",
+                "Mandatory": [
+                    "Result"
+                ]
+            },
+            "GET": {
+                "Name": "",
+                "Mandatory": []
+            }
+        }
+    },
+    {
+        "113": {}
+    },
+    {
+        "114": {
+            "SET": {
+                "Name": "NotifyEvent",
+                "Mandatory": [
+                    "EventNum"
+                ]
+            },
+            "GET": {
+                "Name": "",
+                "Mandatory": []
+            }
+        }
+    },
+    {
+        "115": {}
+    },
+    {
+        "116": {}
+    },
+    {
+        "117": {}
+    },
+    {
+        "118": {}
+    },
+    {
+        "119": {}
+    },
+    {
+        "120": {}
+    },
+    {
+        "121": {}
+    },
+    {
+        "122": {}
+    },
+    {
+        "123": {}
+    },
+    {
+        "124": {}
+    },
+    {
+        "125": {}
+    },
+    {
+        "126": {}
+    },
+    {
+        "127": {}
+    },
+    {
+        "128": {}
+    },
+    {
+        "129": {}
+    },
+    {
+        "130": {}
+    },
+    {
+        "131": {}
+    },
+    {
+        "132": {}
+    },
+    {
+        "133": {}
+    },
+    {
+        "134": {}
+    },
+    {
+        "135": {}
+    },
+    {
+        "136": {}
+    },
+    {
+        "137": {}
+    },
+    {
+        "138": {}
+    },
+    {
+        "139": {}
+    },
+    {
+        "140": {}
+    },
+    {
+        "141": {}
+    },
+    {
+        "142": {}
+    },
+    {
+        "143": {}
+    },
+    {
+        "144": {}
+    },
+    {
+        "145": {}
+    },
+    {
+        "146": {}
+    },
+    {
+        "147": {}
+    },
+    {
+        "148": {}
+    },
+    {
+        "149": {}
+    },
+    {
+        "150": {}
+    },
+    {
+        "151": {}
+    },
+    {
+        "152": {}
+    },
+    {
+        "153": {
+            "SET": {
+                "Name": "Request_test_ready",
+                "Mandatory": [
+                    "Result"
+                ]
+            },
+            "GET": {
+                "Name": "",
+                "Mandatory": []
+            }
+        }
+    }
+]

@@ -1,0 +1,52 @@
+﻿{
+    "DUT_NODE": {
+        "DeviceType": "WIRELESS_DEVICE",
+        "SERIAL": {
+          "COMPORT": "/dev/ttyUSB0",
+          "BAUDRATE": 115200
+        }
+    },
+    "DUT_STA_WLAN": {
+        "DeviceType": "WIRELESS_DEVICE",
+        "SERIAL": {
+          "COMPORT": "/dev/ttyUSB0",
+          "BAUDRATE": 115200
+        }
+    },
+    "ASUSAP": {
+        "DeviceType": "AP",
+        "SOCKET": {
+          "HOST":"localhost",
+          "PORT":5100,
+          "BACKLOG":1,
+          "BUFSIZE":4096
+        }
+    },
+    "BROADCOMAP": {
+        "DeviceType": "AP",
+        "SOCKET": {
+          "HOST":"localhost",
+          "PORT":5101,
+          "BACKLOG":1,
+          "BUFSIZE":4096
+        }
+    },
+    "LENOVOPC": {
+        "DeviceType": "AIRCAP",
+        "SOCKET": {
+          "HOST": "localhost",
+          "PORT": 5200,
+          "BACKLOG": 1,
+          "BUFSIZE": 4096
+        }
+    },
+    "ENDPOINT": {
+        "DeviceType": "NETWORKTOOL",
+        "SOCKET": {
+          "HOST":"localhost",
+          "PORT":5300,
+          "BACKLOG":1,
+          "BUFSIZE":4096
+        }
+    }
+}

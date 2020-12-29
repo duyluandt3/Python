@@ -1,0 +1,7 @@
+{
+    "DeviceType":"AIRCAP",
+    "ExHost":"localhost",
+    "ExPort":5200,
+    "ExBacklog":1,
+    "ExBufsize":4096
+}

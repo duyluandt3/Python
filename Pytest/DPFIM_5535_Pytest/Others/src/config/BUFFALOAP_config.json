@@ -1,0 +1,8 @@
+{
+    "DeviceType":"AP",
+    "ModelName":"WAPM-2133TR",
+    "ExHost":"localhost",
+    "ExPort":5102,
+    "ExBacklog":1,
+    "ExBufsize":4096
+}

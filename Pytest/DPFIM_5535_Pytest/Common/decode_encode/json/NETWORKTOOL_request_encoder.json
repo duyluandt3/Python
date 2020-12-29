@@ -1,0 +1,57 @@
+{
+    "GetStateNETWORKTOOL": {
+        "CmdId": 2,
+        "Action": 1,
+        "MaxRetryCount": 3,
+        "WaitRspTime": 60
+    },
+    "SetCurrentTime": {
+        "CmdId": 3,
+        "Action": 17,
+        "Date": 0,
+        "Time": 0,
+        "MaxRetryCount": 3,
+        "WaitRspTime": 30
+    },
+    "Request_initialization_to": {
+        "CmdId": 4,
+        "Action": 17,
+        "LogName": "",
+        "MaxRetryCount": 3,
+        "WaitRspTime": 30
+    },
+    "Request_termination_to": {
+        "CmdId": 6,
+        "Action": 17,
+        "MaxRetryCount": 3,
+        "WaitRspTime": 30
+    },
+    "Request_ping_to": {
+        "CmdId": 11,
+        "Action": 17,
+        "MaxRetryCount": 3,
+        "WaitRspTime": 40
+    },
+    "Request_iperf_to": {
+        "CmdId": 12,
+        "Action": 17,
+        "IperfModeType": 0,
+        "IperfCmdString": 0,
+        "MaxRetryCount": 3,
+        "WaitRspTime": 620
+    },
+    "Request_iperf_server_stop_to": {
+        "CmdId": 13,
+        "Action": 17,
+        "MaxRetryCount": 3,
+        "WaitRspTime": 30
+    },
+    "Request_test_ready": {
+        "CmdId": 153,
+        "Action": 17,
+        "Date": 0,
+        "Time": 0,
+        "MaxRetryCount": 3,
+        "WaitRspTime": 30
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "DeviceType":"NETWORKTOOL",
+    "ExHost":"localhost",
+    "ExPort":5300,
+    "ExBacklog":1,
+    "ExBufsize":4096
+}

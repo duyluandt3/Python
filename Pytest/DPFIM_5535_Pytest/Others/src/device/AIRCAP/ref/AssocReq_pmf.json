@@ -1,0 +1,14 @@
+{
+    "wlan.fc.type": "0",
+    "wlan.fc.subtype": "0",
+    "wlan_mfg.rsn.version": "1",
+    "wlan_mfg.rsn.gcs": "1027076",
+    "wlan_mfg.rsn.gcs.oui": "4012",
+    "wlan_mfg.rsn.gcs.type": "4",
+    "wlan_mfg.rsn.pcs.count": "1",
+    "wlan_mfg.rsn.pcs": "1027076",
+    "wlan_mfg.rsn.pcs.oui": "4012",
+    "wlan_mfg.rsn.pcs.type": "4",
+    "wlan_mfg.rsn.capabilities.mfpr": "0",
+    "wlan_mfg.rsn.capabilities.mfpc": "0"
+}

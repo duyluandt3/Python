@@ -1,0 +1,29 @@
+<info>
+<name> Luan </name>
+<age> 27 </age>
+
+<Languages>
+<item> C </item>
+<item> C++ </item>
+<item> C# </item>
+<item> Python </item>
+</Languages>
+
+<jobs>
+<item>
+<tilte> GL </tilte>
+<place> NYC </tilte>
+</item>
+
+<item>
+<tilte> Develope </tilte>
+</place> AW </tilte>
+</item>
+
+<item>
+<tilte> BrSE </tilte>
+</place> FJP </place>
+</item>
+</jobs>
+
+</info>
